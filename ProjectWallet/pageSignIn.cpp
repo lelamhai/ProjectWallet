@@ -115,8 +115,16 @@ void PageSignIn::handle()
 
 		if (currentPageLogin == ENTER)
 		{
+			bool flag = false;
 			Singleton::getInstance()->Name = "LLH";
-			nextPage = PageType::PAGE_CUSTOMER;
+
+			if (flag)
+			{
+				nextPage = PageType::PAGE_CUSTOMER;
+			}
+			else {
+				nextPage = PageType::PAGE_ADMIN;
+			}
 			return;
 		}
 	}

@@ -10,6 +10,7 @@ PageCustomer::~PageCustomer()
 void PageCustomer::main()
 {
 	BasePage::setUIInfo();
+	BasePage::setTitlePage("CHUC NANG");
 	BasePage::main();
 }
 
@@ -30,8 +31,56 @@ void PageCustomer::setUI()
 
 void PageCustomer::handle()
 {
+	int hover = 0;
+	int lastHover = -1;
 	while (true)
 	{
-		_getch();
+		if (GetAsyncKeyState(VK_UP) & 0x8000)
+		{
+			if (hover == 0)
+			{
+				continue;
+			}
+			hover--;
+			lastHover = -1;
+			Sleep(150);
+		}
+
+		if (GetAsyncKeyState(VK_DOWN) & 0x8000)
+		{
+			if (hover == menu.size() - 1)
+			{
+				continue;
+			}
+			hover++;
+			lastHover = -1;
+			Sleep(150);
+		}
+
+		if (GetAsyncKeyState(VK_ESCAPE) & 0x8000)
+		{
+			nextPage = PageType::PAGE_SIGNIN;
+			return;
+		}
+
+		if (hover != lastHover)
+		{
+			for (int i = 0; i < menu.size(); i++)
+			{
+				if (hover == i)
+				{
+					listText[i].setColor(ColorCode_DarkGreen);
+					listText[i].clean();
+				}
+				else {
+					listText[i].setColor(ColorCode_White);
+				}
+
+				listText[i].setContent(menu[i]);
+				listText[i].display();
+			}
+
+			lastHover = hover;
+		}
 	}
 }

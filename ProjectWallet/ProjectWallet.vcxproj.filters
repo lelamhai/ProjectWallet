@@ -78,6 +78,9 @@
     <ClCompile Include="pageCustomer.cpp">
       <Filter>Source Files\FE</Filter>
     </ClCompile>
+    <ClCompile Include="pageAdmin.cpp">
+      <Filter>Source Files\FE</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -117,6 +120,9 @@
       <Filter>Header Files\FE</Filter>
     </ClInclude>
     <ClInclude Include="PageCustomer.h">
+      <Filter>Header Files\FE</Filter>
+    </ClInclude>
+    <ClInclude Include="PageAdmin.h">
       <Filter>Header Files\FE</Filter>
     </ClInclude>
   </ItemGroup>

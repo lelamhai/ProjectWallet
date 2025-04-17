@@ -15,6 +15,7 @@ using namespace std;
 enum PageType {
     PAGE_SIGNIN,
     PAGE_CUSTOMER,
+    PAGE_ADMIN,
 
     PAGE_SIGNUP,
     PAGE_FORGOTPASSWORD,
@@ -33,10 +34,8 @@ protected:
 
     PageType nextPage = EXIT;
 
-
 public:
-    void setTitle(string title);
-    void setSayHi(string name);
+    void setTitlePage(string title);
     void setUIInfo();
     virtual void main();
     virtual void setUI();
