@@ -7,6 +7,11 @@ BasePage::~BasePage()
 {
 }
 
+PageType BasePage::getNextPage()
+{
+	return nextPage;
+}
+
 void BasePage::setTitle(string text)
 {
 	this->title = text;
@@ -40,10 +45,9 @@ void BasePage::setUIInfo()
 
 void BasePage::setUI()
 {
-	txtTitle.setPosition(25, PADDING_TOP);
-	txtTitle.setContent(title);
-	txtTitle.display();
-
+	txtTitlePage.setPosition(25, PADDING_TOP);
+	txtTitlePage.setContent(title);
+	txtTitlePage.display();
 }
 
 void BasePage::handle()

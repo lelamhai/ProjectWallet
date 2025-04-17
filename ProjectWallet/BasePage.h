@@ -8,11 +8,14 @@
 #include "Singleton.h"
 
 #include <string>
+#include <vector>
 #include <iostream>
 using namespace std;
 
 enum PageType {
     PAGE_SIGNIN,
+    PAGE_CUSTOMER,
+
     PAGE_SIGNUP,
     PAGE_FORGOTPASSWORD,
     PAGE_HOME,
@@ -21,14 +24,17 @@ enum PageType {
 
 class BasePage
 {
-private:
+protected:
     string title = "TIEU DE";
     string name = "Xin Chao Ten!";
-    Text txtTitle;
-
-public:
+    Text txtTitlePage;
     Text txtSayHi;
     InputField inputBack;
+
+    PageType nextPage = EXIT;
+
+
+public:
     void setTitle(string title);
     void setSayHi(string name);
     void setUIInfo();
@@ -36,6 +42,7 @@ public:
     virtual void setUI();
     virtual void handle();
     virtual void clean();
+    PageType getNextPage();
 
 	BasePage();
 	~BasePage();

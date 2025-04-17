@@ -13,10 +13,111 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\FE">
+      <UniqueIdentifier>{da34ec03-a033-447d-b85f-f93d112af774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BE">
+      <UniqueIdentifier>{16d2b175-5fb1-4926-9595-980e02ed8ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models">
+      <UniqueIdentifier>{068f9d8d-2d43-4546-a166-d6372bb6c7e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FE">
+      <UniqueIdentifier>{b49dfa74-911d-47ea-81eb-846dccfada6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BE">
+      <UniqueIdentifier>{63ef41a4-6f0b-407e-92df-c7aeee4dc806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Models">
+      <UniqueIdentifier>{8689f9c8-d48a-41f0-8dc1-3ca7a1a8d2fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems">
+      <UniqueIdentifier>{8e955079-411e-4713-bc80-288ac8604e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{a14b4ea5-8eee-414d-baf6-925762be6d3b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="color.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="inputField.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="keyboard.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="pagingData.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="singleton.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="text.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="windows.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="basePage.cpp">
+      <Filter>Source Files\FE</Filter>
+    </ClCompile>
+    <ClCompile Include="configApp.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="pageSignIn.cpp">
+      <Filter>Source Files\FE</Filter>
+    </ClCompile>
+    <ClCompile Include="pageCustomer.cpp">
+      <Filter>Source Files\FE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InputField.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="mycolor.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="mydraw.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="mykeyboard.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="mywindows.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="PagingData.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="BasePage.h">
+      <Filter>Header Files\FE</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigApp.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSignIn.h">
+      <Filter>Header Files\FE</Filter>
+    </ClInclude>
+    <ClInclude Include="PageCustomer.h">
+      <Filter>Header Files\FE</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

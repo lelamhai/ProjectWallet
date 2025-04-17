@@ -127,7 +127,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="basePage.cpp" />
+    <ClCompile Include="color.cpp" />
+    <ClCompile Include="configApp.cpp" />
+    <ClCompile Include="draw.cpp" />
+    <ClCompile Include="inputField.cpp" />
+    <ClCompile Include="keyboard.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="pageCustomer.cpp" />
+    <ClCompile Include="pageSignIn.cpp" />
+    <ClCompile Include="pagingData.cpp" />
+    <ClCompile Include="singleton.cpp" />
+    <ClCompile Include="text.cpp" />
+    <ClCompile Include="windows.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasePage.h" />
+    <ClInclude Include="ConfigApp.h" />
+    <ClInclude Include="InputField.h" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="mycolor.h" />
+    <ClInclude Include="mydraw.h" />
+    <ClInclude Include="mykeyboard.h" />
+    <ClInclude Include="mywindows.h" />
+    <ClInclude Include="PageCustomer.h" />
+    <ClInclude Include="PageSignIn.h" />
+    <ClInclude Include="PagingData.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Text.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
