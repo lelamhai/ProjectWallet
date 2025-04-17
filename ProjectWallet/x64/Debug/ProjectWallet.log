@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\main.cpp(4,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  ProjectWallet.vcxproj -> C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\x64\Debug\ProjectWallet.exe
