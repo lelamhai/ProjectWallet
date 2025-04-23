@@ -37,6 +37,18 @@
     <Filter Include="Source Files\Systems">
       <UniqueIdentifier>{a14b4ea5-8eee-414d-baf6-925762be6d3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\FE\PageOfAdmin">
+      <UniqueIdentifier>{a8de80c0-be9b-45ac-88b9-7f2130913ea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FE\PageOfCustomer">
+      <UniqueIdentifier>{242c694a-74b0-42ae-9984-184f2e0b7cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FE\PageOfAdmin">
+      <UniqueIdentifier>{62f114ff-be48-4c8d-8e1b-e9f48c3a0bf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FE\PageOfCustomer">
+      <UniqueIdentifier>{34132e89-8cf5-4946-a462-e91d07055ea3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -75,11 +87,14 @@
     <ClCompile Include="pageSignIn.cpp">
       <Filter>Source Files\FE</Filter>
     </ClCompile>
-    <ClCompile Include="pageCustomer.cpp">
-      <Filter>Source Files\FE</Filter>
+    <ClCompile Include="pageManageAccount.cpp">
+      <Filter>Source Files\FE\PageOfAdmin</Filter>
     </ClCompile>
     <ClCompile Include="pageAdmin.cpp">
-      <Filter>Source Files\FE</Filter>
+      <Filter>Source Files\FE\PageOfAdmin</Filter>
+    </ClCompile>
+    <ClCompile Include="pageCustomer.cpp">
+      <Filter>Source Files\FE\PageOfCustomer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -119,11 +134,14 @@
     <ClInclude Include="PageSignIn.h">
       <Filter>Header Files\FE</Filter>
     </ClInclude>
-    <ClInclude Include="PageCustomer.h">
-      <Filter>Header Files\FE</Filter>
+    <ClInclude Include="PageManageAccount.h">
+      <Filter>Header Files\FE\PageOfAdmin</Filter>
     </ClInclude>
     <ClInclude Include="PageAdmin.h">
-      <Filter>Header Files\FE</Filter>
+      <Filter>Header Files\FE\PageOfAdmin</Filter>
+    </ClInclude>
+    <ClInclude Include="PageCustomer.h">
+      <Filter>Header Files\FE\PageOfCustomer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -9,7 +9,7 @@ PageAdmin::~PageAdmin()
 
 void PageAdmin::main()
 {
-	BasePage::setUIInfo();
+	BasePage::setHeader();
 	BasePage::setTitlePage("CHUC NANG");
 	BasePage::main();
 }
@@ -61,6 +61,27 @@ void PageAdmin::handle()
 		{
 			nextPage = PageType::PAGE_SIGNIN;
 			return;
+		}
+
+		if (GetAsyncKeyState(VK_RETURN) & 0x8000)
+		{
+			switch (hover)
+			{
+			case PagesOfAdmin::PAGE_LISTACCOUNT:
+				nextPage = PageType::PAGE_MANAGEACCOUNT;
+				return;
+
+			case PagesOfAdmin::PAGE_CREATEACCOUNT:
+				//nextPage = PageType::
+				return;
+
+			case PagesOfAdmin::PAGE_LISTWALLET:
+				//nextPage = PageType::
+				return;
+
+			default:
+				break;
+			}
 		}
 
 		if (hover != lastHover)

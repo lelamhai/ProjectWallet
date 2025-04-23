@@ -16,6 +16,7 @@ enum PageType {
     PAGE_SIGNIN,
     PAGE_CUSTOMER,
     PAGE_ADMIN,
+    PAGE_MANAGEACCOUNT,
 
     PAGE_SIGNUP,
     PAGE_FORGOTPASSWORD,
@@ -36,7 +37,9 @@ protected:
 
 public:
     void setTitlePage(string title);
-    void setUIInfo();
+    void setHeader();
+    void setUIButtonBack();
+    void setUISayHi();
     virtual void main();
     virtual void setUI();
     virtual void handle();

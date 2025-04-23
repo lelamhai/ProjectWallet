@@ -3,6 +3,13 @@
 class PageAdmin:public BasePage
 {
 private:
+	enum PagesOfAdmin
+	{
+		PAGE_LISTACCOUNT	= 0,
+		PAGE_CREATEACCOUNT	= 1,
+		PAGE_LISTWALLET		= 2
+	};
+
 	vector<string> menu = {
 		"DS.Tai Khoan",
 		"Them Tai Khoan"

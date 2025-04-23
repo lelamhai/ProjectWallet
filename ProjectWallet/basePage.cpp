@@ -1,6 +1,7 @@
 #include "BasePage.h"
 BasePage::BasePage()
 {
+	name = "Xin Chao " + Singleton::getInstance()->Name + "!";
 }
 
 BasePage::~BasePage()
@@ -27,15 +28,23 @@ void BasePage::main()
 	clean();
 }
 
-void BasePage::setUIInfo()
+void BasePage::setHeader()
 {
-	name = "Xin Chao " + Singleton::getInstance()->Name + "!";
+	setUIButtonBack();
+	setUISayHi();
+}
+
+void BasePage::setUIButtonBack()
+{
 	inputBack.setPosition(2, 1);
 	inputBack.setFrame(15, 2);
 	inputBack.setText(" ESC: Tro Lai");
 	inputBack.drawBox();
 	inputBack.display();
+}
 
+void BasePage::setUISayHi()
+{
 	txtSayHi.setPosition(40, 2);
 	txtSayHi.setContent(name);
 	txtSayHi.display();

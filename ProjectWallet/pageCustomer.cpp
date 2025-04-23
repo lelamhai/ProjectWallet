@@ -9,7 +9,7 @@ PageCustomer::~PageCustomer()
 
 void PageCustomer::main()
 {
-	BasePage::setUIInfo();
+	BasePage::setHeader();
 	BasePage::setTitlePage("CHUC NANG");
 	BasePage::main();
 }

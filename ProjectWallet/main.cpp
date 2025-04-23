@@ -3,6 +3,8 @@
 #include "PageSignIn.h"
 #include "PageCustomer.h"
 #include "PageAdmin.h"
+#include "PageManageAccount.h"
+
 
 using namespace std;
 
@@ -27,6 +29,12 @@ void main()
         case PageType::PAGE_ADMIN:
             showCur(0);
             page = new PageAdmin();
+            page->main();
+            break;
+
+        case PageType::PAGE_MANAGEACCOUNT:
+            showCur(0);
+            page = new PageManageAccount();
             page->main();
             break;
 

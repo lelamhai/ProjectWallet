@@ -134,6 +134,7 @@
     <ClCompile Include="inputField.cpp" />
     <ClCompile Include="keyboard.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="pageManageAccount.cpp" />
     <ClCompile Include="pageAdmin.cpp" />
     <ClCompile Include="pageCustomer.cpp" />
     <ClCompile Include="pageSignIn.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="mydraw.h" />
     <ClInclude Include="mykeyboard.h" />
     <ClInclude Include="mywindows.h" />
+    <ClInclude Include="PageManageAccount.h" />
     <ClInclude Include="PageAdmin.h" />
     <ClInclude Include="PageCustomer.h" />
     <ClInclude Include="PageSignIn.h" />
