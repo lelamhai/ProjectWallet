@@ -15,7 +15,12 @@ bool ManageAccount::SignUp(string last, string first, string phone, string pass)
     model.setFirstName(first);
     model.setPoint(100);
     model.setNumberPhone(phone);
-    model.setPassword(pass);
+    string pw = pass;
+    if (pass == "")
+    {
+        pw = first + phone;
+    }
+    model.setPassword(sha256(pw));
 
     listAccount.push_back(model);
     if (SaveFile())
@@ -45,3 +50,4 @@ bool ManageAccount::SaveFile()
         return false;
     }
 }
+

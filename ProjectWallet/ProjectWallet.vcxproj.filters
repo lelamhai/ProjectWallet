@@ -105,6 +105,9 @@
     <ClCompile Include="pageSignUp.cpp">
       <Filter>Source Files\FE\PageOfAdmin</Filter>
     </ClCompile>
+    <ClCompile Include="sha256.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -160,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="PageSignUp.h">
       <Filter>Header Files\FE\PageOfAdmin</Filter>
+    </ClInclude>
+    <ClInclude Include="sha256.h">
+      <Filter>Header Files\Systems</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

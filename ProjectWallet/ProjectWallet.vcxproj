@@ -142,6 +142,7 @@
     <ClCompile Include="pageSignIn.cpp" />
     <ClCompile Include="pageSignUp.cpp" />
     <ClCompile Include="pagingData.cpp" />
+    <ClCompile Include="sha256.cpp" />
     <ClCompile Include="singleton.cpp" />
     <ClCompile Include="text.cpp" />
     <ClCompile Include="windows.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="PageSignIn.h" />
     <ClInclude Include="PageSignUp.h" />
     <ClInclude Include="PagingData.h" />
+    <ClInclude Include="sha256.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="Text.h" />
   </ItemGroup>

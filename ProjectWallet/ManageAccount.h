@@ -2,6 +2,7 @@
 #include "configApp.h"
 #include "AccountModel.h"
 #include "json.hpp"
+#include "sha256.h"
 #include <vector>
 #include <string>
 #include <fstream>
