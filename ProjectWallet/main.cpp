@@ -1,6 +1,7 @@
 #include <iostream>
 #include "BasePage.h"
 #include "PageSignIn.h"
+#include "PageSignUp.h"
 #include "PageCustomer.h"
 #include "PageAdmin.h"
 #include "PageManageAccount.h"
@@ -10,13 +11,18 @@ using namespace std;
 
 void main()
 {
-	PageType currentPageType = PageType::PAGE_SIGNIN;
+	PageType currentPageType = PageType::PAGE_SIGNUP;
 	BasePage* page = nullptr;
 	
     while (currentPageType != EXIT) {
         switch (currentPageType) {
         case PageType::PAGE_SIGNIN:
             page = new PageSignIn();
+            page->main();
+            break;
+
+        case PageType::PAGE_SIGNUP:
+            page = new PageSignUp();
             page->main();
             break;
 

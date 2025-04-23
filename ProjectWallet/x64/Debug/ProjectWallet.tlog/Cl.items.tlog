@@ -1,3 +1,4 @@
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\accountModel.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\accountModel.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\basePage.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\basePage.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\color.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\color.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\configApp.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\configApp.obj
@@ -5,10 +6,12 @@ C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\draw.c
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\inputField.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\inputField.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\keyboard.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\keyboard.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\main.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\main.obj
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\manageAccount.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\manageAccount.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageManageAccount.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\pageManageAccount.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageAdmin.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\pageAdmin.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageCustomer.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\pageCustomer.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageSignIn.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\pageSignIn.obj
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageSignUp.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\pageSignUp.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pagingData.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\pagingData.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\singleton.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\singleton.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\text.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Debug\text.obj

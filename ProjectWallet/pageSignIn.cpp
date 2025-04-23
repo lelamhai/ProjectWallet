@@ -115,17 +115,21 @@ void PageSignIn::handle()
 
 		if (currentPageLogin == ENTER)
 		{
-			bool flag = false;
-			Singleton::getInstance()->Name = "LLH";
+			string username = listInput[0].getText();
+			string password = listInput[1].getText();
 
-			if (flag)
+			if (username == "admin" && password == "admin")
 			{
-				nextPage = PageType::PAGE_CUSTOMER;
-			}
-			else {
+				Singleton::getInstance()->Name = username;
 				nextPage = PageType::PAGE_ADMIN;
+				listInput[0].clean();
+				listInput[1].clean();
+				return;
 			}
-			return;
+
+			txtMessage.display();
+			currentPageLogin = USERNAME;
+			Sleep(150);
 		}
 	}
 }

@@ -1,0 +1,49 @@
+{
+    "Data": [
+        {
+            "FirstName": "hai",
+            "IsActive": true,
+            "LastName": "le",
+            "NumberPhone": "98",
+            "Password": "",
+            "Point": 100,
+            "UserID": 0
+        },
+        {
+            "FirstName": "tho",
+            "IsActive": true,
+            "LastName": "le",
+            "NumberPhone": "987654",
+            "Password": "123456",
+            "Point": 100,
+            "UserID": 1
+        },
+        {
+            "FirstName": "tho1",
+            "IsActive": true,
+            "LastName": "le",
+            "NumberPhone": "987654",
+            "Password": "123456",
+            "Point": 100,
+            "UserID": 2
+        },
+        {
+            "FirstName": "tho1",
+            "IsActive": true,
+            "LastName": "le1",
+            "NumberPhone": "987654",
+            "Password": "123456",
+            "Point": 100,
+            "UserID": 3
+        },
+        {
+            "FirstName": "tho1",
+            "IsActive": true,
+            "LastName": "le1",
+            "NumberPhone": "987654",
+            "Password": "123456",
+            "Point": 100,
+            "UserID": 4
+        }
+    ]
+}

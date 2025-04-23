@@ -1,5 +1,6 @@
 #pragma once
 #include "BasePage.h"
+#include "ManageAccount.h"
 
 class PageSignIn:public BasePage
 {
@@ -17,6 +18,7 @@ private:
 	vector<Text> listText;
 	vector<InputField> listInput;
 	Text txtMessage;
+
 
 public:
 	void main() override;

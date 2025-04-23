@@ -96,6 +96,15 @@
     <ClCompile Include="pageCustomer.cpp">
       <Filter>Source Files\FE\PageOfCustomer</Filter>
     </ClCompile>
+    <ClCompile Include="accountModel.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="manageAccount.cpp">
+      <Filter>Source Files\BE</Filter>
+    </ClCompile>
+    <ClCompile Include="pageSignUp.cpp">
+      <Filter>Source Files\FE\PageOfAdmin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -142,6 +151,15 @@
     </ClInclude>
     <ClInclude Include="PageCustomer.h">
       <Filter>Header Files\FE\PageOfCustomer</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountModel.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="ManageAccount.h">
+      <Filter>Header Files\BE</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSignUp.h">
+      <Filter>Header Files\FE\PageOfAdmin</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
