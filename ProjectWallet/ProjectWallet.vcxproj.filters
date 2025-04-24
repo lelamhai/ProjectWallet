@@ -108,6 +108,9 @@
     <ClCompile Include="sha256.cpp">
       <Filter>Source Files\Systems</Filter>
     </ClCompile>
+    <ClCompile Include="pageForgotPassword.cpp">
+      <Filter>Source Files\FE\PageOfAdmin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -166,6 +169,9 @@
     </ClInclude>
     <ClInclude Include="sha256.h">
       <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="PageForgotPassword.h">
+      <Filter>Header Files\FE\PageOfAdmin</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

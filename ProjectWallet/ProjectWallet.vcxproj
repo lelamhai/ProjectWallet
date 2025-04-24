@@ -136,6 +136,7 @@
     <ClCompile Include="keyboard.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="manageAccount.cpp" />
+    <ClCompile Include="pageForgotPassword.cpp" />
     <ClCompile Include="pageManageAccount.cpp" />
     <ClCompile Include="pageAdmin.cpp" />
     <ClCompile Include="pageCustomer.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="mydraw.h" />
     <ClInclude Include="mykeyboard.h" />
     <ClInclude Include="mywindows.h" />
+    <ClInclude Include="PageForgotPassword.h" />
     <ClInclude Include="PageManageAccount.h" />
     <ClInclude Include="PageAdmin.h" />
     <ClInclude Include="PageCustomer.h" />

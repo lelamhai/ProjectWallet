@@ -16,11 +16,10 @@ private:
 		EXIT = -1
 	};
 	StateInputSignUp currentPageSignUp;
+
 	vector<string> listLabel = {
-		"Ho",
-		"Ten",
-		"SDT",
-		"Mat Khau"
+		"Mat Khau Moi",
+		"Nhap Lai Mat Khau"
 	};
 
 	vector<Text> listText;

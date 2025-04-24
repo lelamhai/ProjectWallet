@@ -15,12 +15,12 @@ using namespace std;
 enum PageType {
     PAGE_SIGNIN,
     PAGE_CUSTOMER,
+
     PAGE_ADMIN,
     PAGE_MANAGEACCOUNT,
-
     PAGE_SIGNUP,
     PAGE_FORGOTPASSWORD,
-    PAGE_HOME,
+   
     EXIT
 };
 
