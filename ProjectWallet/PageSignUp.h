@@ -32,6 +32,7 @@ public:
 	void main() override;
 	void setUI() override;
 	void handle() override;
+	void cleanInput();
 	PageSignUp();
 	~PageSignUp();
 };

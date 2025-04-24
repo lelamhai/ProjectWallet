@@ -1,4 +1,3 @@
-#include <iostream>
 #include "BasePage.h"
 #include "PageSignIn.h"
 #include "PageSignUp.h"
@@ -6,7 +5,7 @@
 #include "PageAdmin.h"
 #include "PageManageAccount.h"
 
-
+#include <iostream>
 using namespace std;
 
 void main()

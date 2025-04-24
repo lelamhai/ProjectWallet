@@ -15,9 +15,18 @@ using namespace std;
 #define HEIGHT_INPUT 2
 #define LENGTH_INPUT 15
 
+enum class InputType {
+	TEXT,
+	NUMBER,
+	PASSWORD,
+	EMAIL
+};
+
 class InputField
 {
 private:
+	InputType inputType = InputType::TEXT;
+
 	int x, y;
 	int w= WIDTH_INPUT, h = HEIGHT_INPUT;
 	int maxLen = 13;
@@ -27,16 +36,7 @@ private:
 	int cursorPosition = 0;
 
 public:
-	bool useHide = false;
-	bool useGender = false;
-	bool useNum = false;
-	bool useAnswer = false;
-	bool useSpecial = false;
-	bool notUseZero = false;
-	bool notUseSpace = false;
-	bool notKeyArrow = false;
-
-
+	void setInputType(InputType type);
 	void setMaxLen(int length);
 	void setMinLen(int length);
 	void setPosition(int posX, int posY);

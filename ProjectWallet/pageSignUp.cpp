@@ -29,17 +29,20 @@ void PageSignUp::setUI()
 		listText[i].setContent(listLabel[i]);
 		listText[i].display();
 
-
+		
 		listInput[i].setPosition(30, posY);
 		listInput[i].drawBox();
 		listInput[i].display();
 
 		posY += 3;
 	}
+	listInput[2].setInputType(InputType::NUMBER);
+	listInput[3].setInputType(InputType::PASSWORD);
+
 
 	txtMessage.setPosition(20, posY);
-	txtMessage.setContent("Tai Khoan Khong Dung.");
-	txtMessage.setColor(ColorCode_DarkRed);
+	txtMessage.setContent("Vui long nhap hon 6 ky tu.");
+	txtMessage.setColor(ColorCode_DarkYellow);
 
 	gotoXY(28, posY + 3);
 	cout << "Enter";
@@ -50,11 +53,13 @@ void PageSignUp::handle()
 {
 	while (true)
 	{
-
 		if (currentPageSignUp == LASTNAME)
 		{
+			txtMessage.clean();
+			txtMessage.setContent("Vui long khong bo trong.");
+			txtMessage.display();
+			listInput[0].setMinLen(1);
 			listInput[0].handleInput();
-
 			switch (listInput[0].getEndKey())
 			{
 			case KeyState::ENTER:
@@ -87,8 +92,11 @@ void PageSignUp::handle()
 
 		if (currentPageSignUp == FIRSTNAME)
 		{
+			txtMessage.clean();
+			txtMessage.setContent("Vui long khong bo trong.");
+			txtMessage.display();
+			listInput[1].setMinLen(1);
 			listInput[1].handleInput();
-
 			switch (listInput[1].getEndKey())
 			{
 			case  KeyState::ENTER:
@@ -119,8 +127,11 @@ void PageSignUp::handle()
 
 		if (currentPageSignUp == NUMBERPHONE)
 		{
+			txtMessage.clean();
+			txtMessage.setContent("Vui long nhap hon 9 ky tu.");
+			txtMessage.display();
+			listInput[2].setMinLen(9);
 			listInput[2].handleInput();
-
 			switch (listInput[2].getEndKey())
 			{
 			case  KeyState::ENTER:
@@ -151,8 +162,10 @@ void PageSignUp::handle()
 
 		if (currentPageSignUp == PASSWORD)
 		{
+			txtMessage.clean();
+			txtMessage.setContent("   Co the bo trong.");
+			txtMessage.display();
 			listInput[3].handleInput();
-
 			switch (listInput[3].getEndKey())
 			{
 			case  KeyState::ENTER:
@@ -193,11 +206,23 @@ void PageSignUp::handle()
 				bool result = a.SignUp(last, name, phone, pass);
 				if (result)
 				{
-					currentPageSignUp = StateInputSignUp::LASTNAME;
+					cleanInput();
+					txtMessage.clean();
+					txtMessage.setColor(ColorCode_DarkGreen);
+					txtMessage.setContent("Dang ky tai khoan thanh cong.");
+					cleanInput();
 				}
 				else {
-					txtMessage.display();
+					txtMessage.clean();
+					txtMessage.setColor(ColorCode_DarkRed);
+					txtMessage.setContent("SDT da ton tai trong he thong.");
 				}
+
+				showCur(0);
+				txtMessage.display();
+				Sleep(5000);
+				txtMessage.setColor(ColorCode_DarkYellow);
+				currentPageSignUp = StateInputSignUp::LASTNAME;
 			}
 		}
 
@@ -206,5 +231,13 @@ void PageSignUp::handle()
 			nextPage = PageType::PAGE_ADMIN;
 			return;
 		}
+	}
+}
+
+void PageSignUp::cleanInput()
+{
+	for (int i = 0; i < listInput.size(); i++)
+	{
+		listInput[i].clean();
 	}
 }

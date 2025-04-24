@@ -18,7 +18,8 @@ private:
 
 public:
 	bool SignUp(string last, string first, string mail, string password);
-	bool SaveFile();
+	void SaveFile();
+	bool CheckPhone(string phone);
 	ManageAccount();
 	~ManageAccount();
 };

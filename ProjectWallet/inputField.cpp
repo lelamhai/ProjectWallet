@@ -8,6 +8,10 @@ InputField::~InputField()
 {
 }
 
+void InputField::setInputType(InputType type) {
+	inputType = type;
+}
+
 void InputField::setMaxLen(int length)
 {
 	this->maxLen = length;
@@ -48,6 +52,8 @@ void InputField::clean()
 	{
 		gotoXY(x + 1, y + 1);
 		cout << blankFill;
+		setText("");
+		cursorPosition = 0;
 	}
 }
 
@@ -206,18 +212,39 @@ void InputField::handleInput()
 
 			if (s >= 32 && s <= 126)
 			{
-				/*if (s >= 'a' && s <= 'z')
-				{
-					s = s - ('a' - 'A');
-				}*/
-				inputString.insert(inputString.begin() + cursorPosition, s);
-				cursorPosition++;
-				cout << s;
-				if (useHide)
-				{
-					Sleep(150);
-					gotoXY(whereX() - 1, whereY());
-					cout << "*";
+				switch (inputType) {
+					case InputType::NUMBER:
+						if (isdigit(s))
+						{
+							inputString.insert(inputString.begin() + cursorPosition, s);
+							cursorPosition++;
+							cout << s;
+						}
+						break;
+
+					case InputType::PASSWORD:
+						if (isprint(s))
+						{
+							inputString.insert(inputString.begin() + cursorPosition, s);
+							cursorPosition++;
+							cout << s;
+							Sleep(150);
+							gotoXY(whereX() - 1, whereY());
+							cout << "*";
+						}
+						break;
+
+					case InputType::TEXT:
+						if (isprint(s))
+						{
+							inputString.insert(inputString.begin() + cursorPosition, s);
+							cursorPosition++;
+							cout << s;
+						}
+						break;
+
+					default:
+						break;
 				}
 
 				if (cursorPosition != inputString.length())
