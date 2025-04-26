@@ -9,7 +9,7 @@ PageSignUp::~PageSignUp()
 
 void PageSignUp::main()
 {
-	BasePage::setHeader();
+	BasePage::header();
 	BasePage::setTitlePage("DANG KY");
 	BasePage::main();
 }

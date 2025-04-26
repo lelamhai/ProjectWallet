@@ -10,7 +10,7 @@ PageForgotPassword::~PageForgotPassword()
 
 void PageForgotPassword::main()
 {
-	BasePage::setHeader();
+	BasePage::header();
 	BasePage::setTitlePage("CAP LAI MAT KHAU");
 	BasePage::main();
 }

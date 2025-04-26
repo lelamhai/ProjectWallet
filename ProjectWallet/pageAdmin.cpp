@@ -9,7 +9,7 @@ PageAdmin::~PageAdmin()
 
 void PageAdmin::main()
 {
-	BasePage::setHeader();
+	BasePage::header();
 	BasePage::setTitlePage("CHUC NANG");
 	BasePage::main();
 }

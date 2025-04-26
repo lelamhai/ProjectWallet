@@ -15,6 +15,7 @@ using namespace std;
 enum PageType {
     PAGE_SIGNIN,
     PAGE_CUSTOMER,
+    PAGE_CHANGEPASSWORD,
 
     PAGE_ADMIN,
     PAGE_MANAGEACCOUNT,
@@ -38,7 +39,7 @@ protected:
 
 public:
     void setTitlePage(string title);
-    void setHeader();
+    void header();
     void setUIButtonBack();
     void setUISayHi();
     virtual void main();

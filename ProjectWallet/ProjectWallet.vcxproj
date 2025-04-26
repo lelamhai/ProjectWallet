@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="accountModel.cpp" />
     <ClCompile Include="basePage.cpp" />
+    <ClCompile Include="pageChangePassword.cpp" />
     <ClCompile Include="color.cpp" />
     <ClCompile Include="configApp.cpp" />
     <ClCompile Include="draw.cpp" />
@@ -152,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="AccountModel.h" />
     <ClInclude Include="BasePage.h" />
+    <ClInclude Include="PageChangePassword.h" />
     <ClInclude Include="ConfigApp.h" />
     <ClInclude Include="InputField.h" />
     <ClInclude Include="json.hpp" />

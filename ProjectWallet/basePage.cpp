@@ -28,7 +28,7 @@ void BasePage::main()
 	clean();
 }
 
-void BasePage::setHeader()
+void BasePage::header()
 {
 	setUIButtonBack();
 	setUISayHi();
