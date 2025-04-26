@@ -87,7 +87,6 @@ void PageSignUp::handle()
 			default:
 				break;
 			}
-
 		}
 
 		if (currentPageSignUp == FIRSTNAME)
@@ -206,7 +205,6 @@ void PageSignUp::handle()
 				bool result = a.SignUp(last, name, phone, pass);
 				if (result)
 				{
-					cleanInput();
 					txtMessage.clean();
 					txtMessage.setColor(ColorCode_DarkGreen);
 					txtMessage.setContent("Dang ky tai khoan thanh cong.");

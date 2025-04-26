@@ -12,6 +12,7 @@ private:
 
 	vector<string> menu = {
 		"DS.Tai Khoan",
+		"Tra Cu Vi",
 		"Them Tai Khoan"
 	};
 	vector<Text> listText;

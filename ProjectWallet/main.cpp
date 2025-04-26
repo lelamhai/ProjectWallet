@@ -4,6 +4,7 @@
 
 #include "PageAdmin.h"
 #include "PageManageAccount.h"
+#include "PageManageWallet.h"
 #include "PageSignUp.h"
 #include "PageForgotPassword.h"
 
@@ -12,7 +13,7 @@ using namespace std;
 
 void main()
 {
-	PageType currentPageType = PageType::PAGE_FORGOTPASSWORD;
+	PageType currentPageType = PageType::PAGE_MANAGEWALLET;
 	BasePage* page = nullptr;
 	
     while (currentPageType != EXIT) {
@@ -40,6 +41,12 @@ void main()
             case PageType::PAGE_MANAGEACCOUNT:
                 showCur(0);
                 page = new PageManageAccount();
+                page->main();
+                break;
+
+            case PageType::PAGE_MANAGEWALLET:
+                showCur(0);
+                page = new PageManageWallet();
                 page->main();
                 break;
 

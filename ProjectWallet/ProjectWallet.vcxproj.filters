@@ -111,6 +111,9 @@
     <ClCompile Include="pageForgotPassword.cpp">
       <Filter>Source Files\FE\PageOfAdmin</Filter>
     </ClCompile>
+    <ClCompile Include="pageManageWallet.cpp">
+      <Filter>Source Files\FE\PageOfAdmin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -171,6 +174,9 @@
       <Filter>Header Files\Systems</Filter>
     </ClInclude>
     <ClInclude Include="PageForgotPassword.h">
+      <Filter>Header Files\FE\PageOfAdmin</Filter>
+    </ClInclude>
+    <ClInclude Include="PageManageWallet.h">
       <Filter>Header Files\FE\PageOfAdmin</Filter>
     </ClInclude>
   </ItemGroup>

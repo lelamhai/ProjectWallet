@@ -7,7 +7,7 @@ private:
 	vector<string> titleGrid = { "Ho Va Ten", "Diem", "So Dien Thoai", "Trang Thai" };
 	vector<Text> listTitle;
 
-	vector<string> titleTutorial = { "Phim Nong", "F1: Tim Kiem", "F2: Thao Tac Du Lieu", "F3: Quen Mat Khau", "F4: Tra Cuu Vi" };
+	vector<string> titleTutorial = { "Phim Nong", "F1: Tim Kiem", "F2: Thao Tac Du Lieu", "F3: Doi Mat Khau"};
 	vector<Text> listTextTutorial;
 
 	Text txtPagging;
