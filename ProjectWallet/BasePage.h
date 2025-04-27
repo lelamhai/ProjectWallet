@@ -35,6 +35,7 @@ protected:
     Text txtSayHi;
     InputField inputBack;
 
+    int UserID = -1;
     PageType nextPage = EXIT;
 
 public:

@@ -1,6 +1,7 @@
 #include "PageSignIn.h"
 PageSignIn::PageSignIn()
 {
+	UserID = -1;
 }
 
 PageSignIn::~PageSignIn()
@@ -16,7 +17,7 @@ void PageSignIn::setUI()
 {
 	box(0, 0, 60, 17);
 	txtTitlePage.setPosition(25, 2);
-	txtTitlePage.setContent("Dang Nhap");
+	txtTitlePage.setContent("DANG NHAP");
 	txtTitlePage.display();
 
 	int posY = 5;
@@ -36,10 +37,12 @@ void PageSignIn::setUI()
 		posY += 3;
 	}
 
+
 	listText[0].setContent("Tai Khoan");
 	listText[0].display();
 
 	listText[1].setContent("Mat Khau");
+	listInput[1].setInputType(InputType::PASSWORD);
 	listText[1].display();
 
 	txtMessage.setPosition(20, posY);
@@ -55,7 +58,7 @@ void PageSignIn::handle()
 {
 	while (true)
 	{
-		if (currentPageLogin == USERNAME)
+		if (currentPageLogin == StateInputLogin::USERNAME)
 		{
 			listInput[0].handleInput();
 
@@ -68,15 +71,15 @@ void PageSignIn::handle()
 					break;
 				}
 
-				currentPageLogin = PASSWORD;
+				currentPageLogin = StateInputLogin::PASSWORD;
 				break;
 
 			case KeyState::UP:
-				currentPageLogin = PASSWORD;
+				currentPageLogin = StateInputLogin::PASSWORD;
 				break;
 
 			case KeyState::DOWN:
-				currentPageLogin = PASSWORD;
+				currentPageLogin = StateInputLogin::PASSWORD;
 				break;
 
 			default:
@@ -85,7 +88,7 @@ void PageSignIn::handle()
 
 		}
 
-		if (currentPageLogin == PASSWORD)
+		if (currentPageLogin == StateInputLogin::PASSWORD)
 		{
 			listInput[1].handleInput();
 
@@ -97,15 +100,15 @@ void PageSignIn::handle()
 					currentPageLogin = StateInputLogin::ENTER;
 					break;
 				}
-				currentPageLogin = USERNAME;
+				currentPageLogin = StateInputLogin::USERNAME;
 				break;
 
 			case KeyState::UP:
-				currentPageLogin = USERNAME;
+				currentPageLogin = StateInputLogin::USERNAME;
 				break;
 
 			case KeyState::DOWN:
-				currentPageLogin = USERNAME;
+				currentPageLogin = StateInputLogin::USERNAME;
 				break;
 
 			default:
@@ -113,7 +116,7 @@ void PageSignIn::handle()
 			}
 		}
 
-		if (currentPageLogin == ENTER)
+		if (currentPageLogin == StateInputLogin::ENTER)
 		{
 			string username = listInput[0].getText();
 			string password = listInput[1].getText();
@@ -126,10 +129,31 @@ void PageSignIn::handle()
 				listInput[1].clean();
 				return;
 			}
+			else {
+				AccountModel model = a.SignIn(username, password);
+				if (model.getNumberPhone() != "")
+				{
+					Singleton::getInstance()->Name = model.getFirstName();
+					UserID = model.getUserID();
+					if (!model.getIsActive())
+					{
+						nextPage = PageType::PAGE_CHANGEPASSWORD;
+						return;
+					}
+					nextPage = PageType::PAGE_CUSTOMER;
+					return;
+				}
+			}
 
+			txtMessage.clean();
+			txtMessage.setColor(ColorCode_DarkRed);
+			txtMessage.setContent("Tai khoan khong dung.");
+
+			showCur(0);
 			txtMessage.display();
-			currentPageLogin = USERNAME;
-			Sleep(150);
+			Sleep(5000);
+			txtMessage.setColor(ColorCode_DarkYellow);
+			currentPageLogin = StateInputLogin::USERNAME;
 		}
 	}
 }

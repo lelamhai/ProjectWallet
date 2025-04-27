@@ -18,14 +18,15 @@ private:
 	StateInputSignUp currentPageSignUp;
 
 	vector<string> listLabel = {
-		"Mat Khau Moi",
-		"Nhap Lai Mat Khau"
+		"Ho",
+		"Ten",
+		"SDT",
+		"Mat Khau"
 	};
 
 	vector<Text> listText;
 	vector<InputField> listInput;
 	Text txtMessage;
-	ManageAccount a;
 
 public:
 	void main() override;

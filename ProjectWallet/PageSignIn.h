@@ -18,7 +18,7 @@ private:
 	vector<Text> listText;
 	vector<InputField> listInput;
 	Text txtMessage;
-
+	ManageAccount a;
 
 public:
 	void main() override;

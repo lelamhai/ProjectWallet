@@ -14,7 +14,7 @@ using namespace std;
 
 void main()
 {
-	PageType currentPageType = PageType::PAGE_CHANGEPASSWORD;
+	PageType currentPageType = PageType::PAGE_SIGNIN;
 	BasePage* page = nullptr;
 	
     while (currentPageType != EXIT) {

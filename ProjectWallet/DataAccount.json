@@ -2,21 +2,12 @@
     "Data": [
         {
             "FirstName": "hai",
-            "IsActive": true,
-            "LastName": "le lam",
-            "NumberPhone": "123456789",
+            "IsActive": false,
+            "LastName": "le",
+            "NumberPhone": "0969128313",
             "Password": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
             "Point": 100,
             "UserID": 0
-        },
-        {
-            "FirstName": "thao",
-            "IsActive": true,
-            "LastName": "le huyen",
-            "NumberPhone": "123456799",
-            "Password": "d8e7cf29397bf7c4c0b122cee35befa26db8820abc36b544d8128d6e33d2e273",
-            "Point": 100,
-            "UserID": 1
         }
     ]
 }

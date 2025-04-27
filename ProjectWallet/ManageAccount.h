@@ -18,8 +18,13 @@ private:
 
 public:
 	bool SignUp(string last, string first, string mail, string password);
-	void SaveFile();
+	AccountModel SignIn(string user, string pass);
+	vector<AccountModel> LoadAccount(const string& keyword);
+	string ToLower(const string& str);
 	bool CheckPhone(string phone);
+	void SaveFile();
+	bool LoadData();
+
 	ManageAccount();
 	~ManageAccount();
 };

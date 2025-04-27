@@ -2,6 +2,7 @@
 
 ManageAccount::ManageAccount()
 {
+    LoadData();
 }
 
 ManageAccount::~ManageAccount()
@@ -20,7 +21,8 @@ bool ManageAccount::SignUp(string last, string first, string phone, string pass)
         string pw = pass;
         if (pass == "")
         {
-            pw = first + phone;
+            pw = phone;
+            model.setIsActive(false);
         }
         model.setPassword(sha256(pw));
 
@@ -30,6 +32,60 @@ bool ManageAccount::SignUp(string last, string first, string phone, string pass)
     }
     
     return false;
+}
+
+AccountModel ManageAccount::SignIn(string user, string pass)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getNumberPhone() == user && listAccount[i].getPassword() == sha256(pass))
+        {
+            return listAccount[i];
+        }
+    }
+    return AccountModel();
+}
+
+vector<AccountModel> ManageAccount::LoadAccount(const string& keyword) {
+
+    if (keyword != "")
+    {
+        vector<AccountModel> results;
+        string lowerKeyword = ToLower(keyword);
+
+        for (int i = 0; i < listAccount.size(); i++)
+        {
+            string lowerFirstName = ToLower(listAccount[i].getFirstName());
+            string lowerLastName = ToLower(listAccount[i].getLastName());
+            string lowerNumberPhone = ToLower(listAccount[i].getNumberPhone());
+            if (lowerFirstName.find(lowerKeyword) != string::npos ||
+                lowerLastName.find(lowerKeyword) != string::npos ||
+                lowerNumberPhone.find(lowerKeyword) != string::npos) {
+                results.push_back(listAccount[i]);
+            }
+        }
+        return results;
+    }
+    return listAccount;
+}
+
+bool ManageAccount::CheckPhone(string phone)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getNumberPhone() == phone)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+string ManageAccount::ToLower(const string& str)
+{
+    string lowerStr = str;
+    transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(), ::tolower);
+    return lowerStr;
 }
 
 void ManageAccount::SaveFile()
@@ -49,14 +105,26 @@ void ManageAccount::SaveFile()
     }
 }
 
-bool ManageAccount::CheckPhone(string phone)
+bool ManageAccount::LoadData()
 {
-    for (int i = 0; i < listAccount.size(); i++)
-    {
-        if (listAccount[i].getNumberPhone() == phone)
+    ifstream file(path);
+    if (file.is_open()) {
+        json j;
+        file >> j;
+        file.close();
+        json jsonAccount = json::array();
+        jsonAccount = j["Data"];
+
+        for (int i = 0; i < jsonAccount.size(); i++)
         {
-            return false;
+            AccountModel model;
+            model.fromJson(jsonAccount[i]);
+            listAccount.push_back(model);
         }
+
+        return true;
     }
-    return true;
+    else {
+        return true;
+    }
 }

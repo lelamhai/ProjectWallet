@@ -202,6 +202,7 @@ void PageSignUp::handle()
 
 			if (last != "" && name != "" && phone != "")
 			{
+				ManageAccount a;
 				bool result = a.SignUp(last, name, phone, pass);
 				if (result)
 				{
