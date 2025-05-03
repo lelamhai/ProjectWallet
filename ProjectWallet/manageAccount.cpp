@@ -46,6 +46,34 @@ AccountModel ManageAccount::SignIn(string user, string pass)
     return AccountModel();
 }
 
+vector<AccountModel> ManageAccount::LoadAccount(const string& keyword) {
+
+    if (keyword != "")
+    {
+        vector<AccountModel> results;
+        string lowerKeyword = ToLower(keyword);
+
+        for (int i = 0; i < listAccount.size(); i++)
+        {
+            string lowerFirstName = ToLower(listAccount[i].getFirstName());
+            string lowerLastName = ToLower(listAccount[i].getLastName());
+            string lowerNumberPhone = ToLower(listAccount[i].getNumberPhone());
+            if (lowerFirstName.find(lowerKeyword) != string::npos ||
+                lowerLastName.find(lowerKeyword) != string::npos ||
+                lowerNumberPhone.find(lowerKeyword) != string::npos) {
+                results.push_back(listAccount[i]);
+            }
+        }
+        return results;
+    }
+    return listAccount;
+}
+
+vector<AccountModel> ManageAccount::GetAllAccount()
+{
+    return listAccount;
+}
+
 bool ManageAccount::CheckPhone(string phone)
 {
     for (int i = 0; i < listAccount.size(); i++)
