@@ -19,7 +19,6 @@ private:
 public:
 	bool SignUp(string last, string first, string mail, string password);
 	AccountModel SignIn(string user, string pass);
-	vector<AccountModel> LoadAccount(const string& keyword);
 	string ToLower(const string& str);
 	bool CheckPhone(string phone);
 	void SaveFile();
