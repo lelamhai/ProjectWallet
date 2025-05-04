@@ -69,6 +69,36 @@ vector<AccountModel> ManageAccount::LoadAccount(const string& keyword) {
     return listAccount;
 }
 
+bool ManageAccount::AddPoint(AccountModel model, int point)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (model.getUserID() == listAccount[i].getUserID())
+        {
+            int newPoint = listAccount[i].getPoint() + point;
+            listAccount[i].setPoint(newPoint);
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
+}
+
+bool ManageAccount::DeductPoint(AccountModel model, int point)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (model.getUserID() == listAccount[i].getUserID())
+        {
+            int newPoint = listAccount[i].getPoint() - point;
+            listAccount[i].setPoint(newPoint);
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
+}
+
 vector<AccountModel> ManageAccount::GetAllAccount()
 {
     return listAccount;
