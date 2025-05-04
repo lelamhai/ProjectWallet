@@ -24,6 +24,8 @@ public:
 	vector<AccountModel> LoadAccount(const string& keyword);
 	vector<AccountModel> GetAllAccount();
 	string ToLower(const string& str);
+	bool ForgotPassword(int userID, string oldPass, string newPass);
+	bool ChangePassword(int userID, string newPass);
 	bool CheckPhone(string phone);
 	void SaveFile();
 	bool LoadData();

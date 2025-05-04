@@ -123,6 +123,39 @@ string ManageAccount::ToLower(const string& str)
     return lowerStr;
 }
 
+bool ManageAccount::ForgotPassword(int userID, string oldPass, string newPass)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getUserID() == userID)
+        {
+            if (listAccount[i].getPassword() != sha256(oldPass))
+            {
+                return false;
+            }
+         
+            listAccount[i].setPassword(sha256(newPass));
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
+}
+
+bool ManageAccount::ChangePassword(int userID, string newPass)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getUserID() == userID)
+        {
+            listAccount[i].setPassword(sha256(newPass));
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
+}
+
 void ManageAccount::SaveFile()
 {
     json jsonAccount = json::array();
