@@ -46,16 +46,62 @@ AccountModel ManageAccount::SignIn(string user, string pass)
     return AccountModel();
 }
 
-AccountModel ManageAccount::FindByPhone(string phone)
+vector<AccountModel> ManageAccount::LoadAccount(const string& keyword) {
+
+    if (keyword != "")
+    {
+        vector<AccountModel> results;
+        string lowerKeyword = ToLower(keyword);
+
+        for (int i = 0; i < listAccount.size(); i++)
+        {
+            string lowerFirstName = ToLower(listAccount[i].getFirstName());
+            string lowerLastName = ToLower(listAccount[i].getLastName());
+            string lowerNumberPhone = ToLower(listAccount[i].getNumberPhone());
+            if (lowerFirstName.find(lowerKeyword) != string::npos ||
+                lowerLastName.find(lowerKeyword) != string::npos ||
+                lowerNumberPhone.find(lowerKeyword) != string::npos) {
+                results.push_back(listAccount[i]);
+            }
+        }
+        return results;
+    }
+    return listAccount;
+}
+
+bool ManageAccount::AddPoint(AccountModel model, int point)
 {
     for (int i = 0; i < listAccount.size(); i++)
     {
-        if (listAccount[i].getNumberPhone() == phone)
+        if (model.getUserID() == listAccount[i].getUserID())
         {
-            return listAccount[i];
+            int newPoint = listAccount[i].getPoint() + point;
+            listAccount[i].setPoint(newPoint);
+            SaveFile();
+            return true;
         }
     }
-    return AccountModel();
+    return false;
+}
+
+bool ManageAccount::DeductPoint(AccountModel model, int point)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (model.getUserID() == listAccount[i].getUserID())
+        {
+            int newPoint = listAccount[i].getPoint() - point;
+            listAccount[i].setPoint(newPoint);
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
+}
+
+vector<AccountModel> ManageAccount::GetAllAccount()
+{
+    return listAccount;
 }
 
 bool ManageAccount::CheckPhone(string phone)
@@ -75,6 +121,39 @@ string ManageAccount::ToLower(const string& str)
     string lowerStr = str;
     transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(), ::tolower);
     return lowerStr;
+}
+
+bool ManageAccount::ForgotPassword(int userID, string oldPass, string newPass)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getUserID() == userID)
+        {
+            if (listAccount[i].getPassword() != sha256(oldPass))
+            {
+                return false;
+            }
+         
+            listAccount[i].setPassword(sha256(newPass));
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
+}
+
+bool ManageAccount::ChangePassword(int userID, string newPass)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getUserID() == userID)
+        {
+            listAccount[i].setPassword(sha256(newPass));
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
 }
 
 void ManageAccount::SaveFile()

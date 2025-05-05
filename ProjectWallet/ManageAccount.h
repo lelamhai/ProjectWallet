@@ -19,7 +19,13 @@ private:
 public:
 	bool SignUp(string last, string first, string mail, string password);
 	AccountModel SignIn(string user, string pass);
+	bool AddPoint(AccountModel model, int point);
+	bool DeductPoint(AccountModel model, int point);
+	vector<AccountModel> LoadAccount(const string& keyword);
+	vector<AccountModel> GetAllAccount();
 	string ToLower(const string& str);
+	bool ForgotPassword(int userID, string oldPass, string newPass);
+	bool ChangePassword(int userID, string newPass);
 	bool CheckPhone(string phone);
 	void SaveFile();
 	bool LoadData();

@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\manageAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,6 +14,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\manageTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+=======
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageChangePassword.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\pageChangePassword.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageChangePassword.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PageChangePassword.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+>>>>>>> c43afb9b892508370f0865697e5efab705fa88cd
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +31,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "ManageAccount.h",
               "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\ManageAccount.h",
               "RelativeDocumentMoniker": "ProjectWallet\\ManageAccount.h",
@@ -36,10 +46,32 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-05T04:12:50.703Z",
               "EditorCaption": ""
+=======
+              "Title": "PageChangePassword.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageChangePassword.h",
+              "RelativeDocumentMoniker": "ProjectWallet\\PageChangePassword.h",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageChangePassword.h",
+              "RelativeToolTip": "ProjectWallet\\PageChangePassword.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-05T02:51:18.659Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 158,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+>>>>>>> c43afb9b892508370f0865697e5efab705fa88cd
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "manageAccount.cpp",
               "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageAccount.cpp",
               "RelativeDocumentMoniker": "ProjectWallet\\manageAccount.cpp",
@@ -61,6 +93,16 @@
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAHQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-03T13:38:44.994Z",
+=======
+              "Title": "pageChangePassword.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageChangePassword.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\pageChangePassword.cpp",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageChangePassword.cpp",
+              "RelativeToolTip": "ProjectWallet\\pageChangePassword.cpp",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAswKsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-05T02:51:21.943Z",
+>>>>>>> c43afb9b892508370f0865697e5efab705fa88cd
               "EditorCaption": ""
             }
           ]
