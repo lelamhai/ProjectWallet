@@ -19,7 +19,7 @@ bool ManageAccount::SignUp(string last, string first, string phone, string pass)
         model.setPoint(100);
         model.setNumberPhone(phone);
         string pw = pass;
-        if (pass == "")
+        if (pass == "")  
         {
             pw = phone;
             model.setIsActive(false);
@@ -123,7 +123,7 @@ string ManageAccount::ToLower(const string& str)
     return lowerStr;
 }
 
-bool ManageAccount::ForgotPassword(int userID, string oldPass, string newPass)
+bool ManageAccount::ChangePassword(int userID, string oldPass, string newPass)
 {
     for (int i = 0; i < listAccount.size(); i++)
     {
@@ -142,7 +142,7 @@ bool ManageAccount::ForgotPassword(int userID, string oldPass, string newPass)
     return false;
 }
 
-bool ManageAccount::ChangePassword(int userID, string newPass)
+bool ManageAccount::ForgotPassword(int userID, string newPass)
 {
     for (int i = 0; i < listAccount.size(); i++)
     {

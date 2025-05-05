@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\",
+  "WorkspaceRootPath": "D:\\LearningCode\\cloneproject\\ProjectWallet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\manageAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\ManageAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectWallet\\ManageAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\ManageAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\ManageAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\manageAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectWallet\\manageAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\manageTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\manageTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectWallet\\manageTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ManageAccount.h",
-              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\ManageAccount.h",
+              "DocumentMoniker": "D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\ManageAccount.h",
               "RelativeDocumentMoniker": "ProjectWallet\\ManageAccount.h",
-              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\ManageAccount.h",
+              "ToolTip": "D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\ManageAccount.h",
               "RelativeToolTip": "ProjectWallet\\ManageAccount.h",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwCIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwBsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-05T04:12:50.703Z",
               "EditorCaption": ""
@@ -41,24 +45,23 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "manageTransaction.cpp",
-              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageTransaction.cpp",
+              "DocumentMoniker": "D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\manageTransaction.cpp",
               "RelativeDocumentMoniker": "ProjectWallet\\manageTransaction.cpp",
-              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageTransaction.cpp",
+              "ToolTip": "D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\manageTransaction.cpp",
               "RelativeToolTip": "ProjectWallet\\manageTransaction.cpp",
               "ViewState": "AgIAAC0AAAAAAAAAAAAYwD8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-03T13:38:44.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T13:38:44.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "manageAccount.cpp",
-              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageAccount.cpp",
+              "DocumentMoniker": "D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\manageAccount.cpp",
               "RelativeDocumentMoniker": "ProjectWallet\\manageAccount.cpp",
-              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\manageAccount.cpp",
+              "ToolTip": "D:\\LearningCode\\cloneproject\\ProjectWallet\\ProjectWallet\\manageAccount.cpp",
               "RelativeToolTip": "ProjectWallet\\manageAccount.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAH0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-05T04:09:33.826Z",
               "EditorCaption": ""
