@@ -72,7 +72,7 @@ void PageCustomer::handle()
 				return;
 
 			case PagesOfCustomer::PAGE_CHANGEPASSWORD:
-				//nextPage = PageType::
+				nextPage = PageType::PAGE_CHANGEPASSWORD;
 				return;
 
 			case PagesOfCustomer::PAGE_HISTORYTRANSACTION:

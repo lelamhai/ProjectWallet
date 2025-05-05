@@ -1,5 +1,6 @@
 #pragma once
 #include "BasePage.h"
+#include "ManageAccount.h"
 
 class PageChangePassword:public BasePage
 {

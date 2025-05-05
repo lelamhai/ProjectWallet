@@ -156,10 +156,20 @@ void PageChangePassword::handle()
 
 		if (currentFP == StateInputCP::ENTER)
 		{
-			if (listInput[0].getText() == listInput[1].getText())
+			if (listInput[1].getText() == listInput[2].getText())
 			{
-				nextPage = PageType::PAGE_SIGNIN;
-				return;
+				ManageAccount a;
+				bool result = a.ChangePassword(Singleton::getInstance()->UserID, listInput[0].getText(), listInput[1].getText());
+				if (result)
+				{
+					nextPage = PageType::PAGE_SIGNIN;
+					return;
+				}
+				else {
+					txtMessage.clean();
+					txtMessage.setColor(ColorCode_DarkRed);
+					txtMessage.setContent("Mat khau cu khong dung.");
+				}
 			}
 			else {
 				txtMessage.clean();

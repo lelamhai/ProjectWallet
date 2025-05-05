@@ -1,2 +1,5 @@
-﻿  pagePointTransaction.cpp
+﻿  main.cpp
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\main.cpp(18,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  pageCustomer.cpp
+  Generating Code...
   ProjectWallet.vcxproj -> C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\x64\Debug\ProjectWallet.exe
