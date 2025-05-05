@@ -9,6 +9,7 @@ private:
 		PASSWORD_OLD	= 0,
 		PASSWORD_NEW	= 1,
 		PASSWORD_AGAIGN = 2,
+		ENTER			= 3,
 
 		EXIT			= -1
 	};

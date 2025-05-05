@@ -50,6 +50,134 @@ void PageChangePassword::handle()
 {
 	while (true)
 	{
+		if (currentFP == StateInputCP::PASSWORD_OLD)
+		{
+			txtMessage.clean();
+			txtMessage.setContent("Vui long nhap hon 9 ky tu.");
+			txtMessage.display();
+			listInput[0].handleInput();
 
+			switch (listInput[0].getEndKey())
+			{
+			case KeyState::ENTER:
+				if (listInput[0].getText() != "" && listInput[1].getText() != "" && listInput[2].getText() != "")
+				{
+					currentFP = StateInputCP::ENTER;
+					break;
+				}
+
+				currentFP = StateInputCP::PASSWORD_NEW;
+				break;
+
+			case KeyState::UP:
+				currentFP = StateInputCP::PASSWORD_AGAIGN;
+				break;
+
+			case KeyState::DOWN:
+				currentFP = StateInputCP::PASSWORD_NEW;
+				break;
+
+			case KeyState::ESC:
+				currentFP = StateInputCP::EXIT;
+				break;
+
+			default:
+				break;
+			}
+		}
+
+		if (currentFP == StateInputCP::PASSWORD_NEW)
+		{
+			txtMessage.clean();
+			txtMessage.setContent("Vui long nhap hon 9 ky tu.");
+			txtMessage.display();
+			listInput[1].handleInput();
+			switch (listInput[1].getEndKey())
+			{
+			case  KeyState::ENTER:
+				if (listInput[0].getText() != "" && listInput[1].getText() != "" && listInput[2].getText() != "")
+				{
+					currentFP = StateInputCP::ENTER;
+					break;
+				}
+				currentFP = StateInputCP::PASSWORD_AGAIGN;
+				break;
+
+			case KeyState::UP:
+				currentFP = StateInputCP::PASSWORD_OLD;
+				break;
+
+			case KeyState::DOWN:
+				currentFP = StateInputCP::PASSWORD_AGAIGN;
+				break;
+
+			case KeyState::ESC:
+				currentFP = StateInputCP::EXIT;
+				break;
+
+			default:
+				break;
+			}
+		}
+
+		if (currentFP == StateInputCP::PASSWORD_AGAIGN)
+		{
+			txtMessage.clean();
+			txtMessage.setContent("Vui long nhap hon 9 ky tu.");
+			txtMessage.display();
+			listInput[2].handleInput();
+			switch (listInput[2].getEndKey())
+			{
+			case  KeyState::ENTER:
+				if (listInput[0].getText() != "" && listInput[1].getText() != "" && listInput[2].getText() != "")
+				{
+					currentFP = StateInputCP::ENTER;
+					break;
+				}
+				currentFP = StateInputCP::PASSWORD_OLD;
+				break;
+
+			case KeyState::UP:
+				currentFP = StateInputCP::PASSWORD_NEW;
+				break;
+
+			case KeyState::DOWN:
+				currentFP = StateInputCP::PASSWORD_OLD;
+				break;
+
+			case KeyState::ESC:
+				currentFP = StateInputCP::EXIT;
+				break;
+
+			default:
+				break;
+			}
+		}
+
+		if (currentFP == StateInputCP::ENTER)
+		{
+			if (listInput[0].getText() == listInput[1].getText())
+			{
+				nextPage = PageType::PAGE_SIGNIN;
+				return;
+			}
+			else {
+				txtMessage.clean();
+				txtMessage.setColor(ColorCode_DarkRed);
+				txtMessage.setContent("Mat khau khong trung nhau.");
+			}
+
+			showCur(0);
+			txtMessage.display();
+			Sleep(5000);
+			txtMessage.setColor(ColorCode_DarkYellow);
+			currentFP = StateInputCP::PASSWORD_OLD;
+		}
+
+		if (currentFP == StateInputCP::EXIT)
+		{
+			nextPage = PageType::PAGE_CUSTOMER;
+			return;
+		}
 	}
 }
