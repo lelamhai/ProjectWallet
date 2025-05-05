@@ -29,11 +29,8 @@ public:
 	bool CheckPhone(string phone);
 	void SaveFile();
 	bool LoadData();
-	vector<AccountModel> GetAllAccount();
 	AccountModel FindByUserID(int id);
 	AccountModel FindByPhone(string phone);
-	bool DeductPoint(AccountModel model, int point);
-	bool AddPoint(AccountModel model, int point);
 	ManageAccount();
 	~ManageAccount();
 };

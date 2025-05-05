@@ -208,37 +208,14 @@ AccountModel ManageAccount::FindByUserID(int userID)
     }
 }
 
-bool ManageAccount::DeductPoint(AccountModel model, int point)
+AccountModel ManageAccount::FindByPhone(string phone)
 {
     for (int i = 0; i < listAccount.size(); i++)
     {
-        if (model.getUserID() == listAccount[i].getUserID())
+        if (listAccount[i].getNumberPhone() == phone)
         {
-            int newPoint = listAccount[i].getPoint() - point;
-            listAccount[i].setPoint(newPoint);
-            SaveFile();
-            return true;
+            return listAccount[i];
         }
     }
-    return false;
-}
-
-bool ManageAccount::AddPoint(AccountModel model, int point)
-{
-    for (int i = 0; i < listAccount.size(); i++)
-    {
-        if (model.getUserID() == listAccount[i].getUserID())
-        {
-            int newPoint = listAccount[i].getPoint() + point;
-            listAccount[i].setPoint(newPoint);
-            SaveFile();
-            return true;
-        }
-    }
-    return false;
-}
-
-vector<AccountModel> ManageAccount::GetAllAccount()
-{
-    return listAccount;
+    return AccountModel();
 }
