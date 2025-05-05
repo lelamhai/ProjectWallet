@@ -143,6 +143,7 @@
     <ClCompile Include="pageAdmin.cpp" />
     <ClCompile Include="pageCustomer.cpp" />
     <ClCompile Include="pageManageWallet.cpp" />
+    <ClCompile Include="pagePointTransaction.cpp" />
     <ClCompile Include="pageSignIn.cpp" />
     <ClCompile Include="pageSignUp.cpp" />
     <ClCompile Include="pagingData.cpp" />
@@ -170,6 +171,7 @@
     <ClInclude Include="PageAdmin.h" />
     <ClInclude Include="PageCustomer.h" />
     <ClInclude Include="PageManageWallet.h" />
+    <ClInclude Include="PagePointTransaction.h" />
     <ClInclude Include="PageSignIn.h" />
     <ClInclude Include="PageSignUp.h" />
     <ClInclude Include="PagingData.h" />

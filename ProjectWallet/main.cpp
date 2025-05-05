@@ -1,7 +1,10 @@
 #include "BasePage.h"
 #include "PageSignIn.h"
 #include "PageCustomer.h"
+//#include "PageProfile"
 #include "PageChangePassword.h"
+//#include "PageHistoryTransaction"
+#include "PagePointTransaction.h"
 
 #include "PageAdmin.h"
 #include "PageManageAccount.h"
@@ -30,12 +33,22 @@ void main()
                 page->main();
                 break;
 
+            case PageType::PAGE_PROFILE:
+                break;
+
             case PageType::PAGE_CHANGEPASSWORD:
                 showCur(0);
                 page = new PageChangePassword();
                 page->main();
                 break;
                 
+            case PageType::PAGE_HISTORYTRANSACTION:
+                break;
+
+            case PageType::PAGE_POINTRANSACTION:
+                page = new PagePointTransaction();
+                page->main();
+                break;
 
       
 

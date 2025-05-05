@@ -4,6 +4,14 @@
 class PageCustomer:public BasePage
 {
 private:
+	enum PagesOfCustomer
+	{
+		PAGE_PROFILE			= 0,
+		PAGE_CHANGEPASSWORD		= 1,
+		PAGE_HISTORYTRANSACTION = 2,
+		PAGE_POINTTRANSACTION	= 3
+	};
+
 	vector<string> menu = {
 		"Thong Tin",
 		"Doi Mat Khau",

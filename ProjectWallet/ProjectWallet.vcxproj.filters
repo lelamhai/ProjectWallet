@@ -123,6 +123,9 @@
     <ClCompile Include="transactionModel.cpp">
       <Filter>Source Files\Models</Filter>
     </ClCompile>
+    <ClCompile Include="pagePointTransaction.cpp">
+      <Filter>Source Files\FE\PageOfCustomer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -196,6 +199,9 @@
     </ClInclude>
     <ClInclude Include="transactionModel.h">
       <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="PagePointTransaction.h">
+      <Filter>Header Files\FE\PageOfCustomer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

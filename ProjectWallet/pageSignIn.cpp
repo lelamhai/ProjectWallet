@@ -133,11 +133,12 @@ void PageSignIn::handle()
 				AccountModel model = a.SignIn(username, password);
 				if (model.getNumberPhone() != "")
 				{
-					Singleton::getInstance()->Name = model.getFirstName();
 					UserID = model.getUserID();
+					Singleton::getInstance()->Name = model.getFirstName();
+					Singleton::getInstance()->UserID = UserID;
 					if (!model.getIsActive())
 					{
-						nextPage = PageType::PAGE_CHANGEPASSWORD;
+						nextPage = PageType::PAGE_CUSTOMER;
 						return;
 					}
 					nextPage = PageType::PAGE_CUSTOMER;

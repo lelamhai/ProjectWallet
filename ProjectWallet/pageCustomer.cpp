@@ -63,6 +63,31 @@ void PageCustomer::handle()
 			return;
 		}
 
+		if (GetAsyncKeyState(VK_RETURN) & 0x8000)
+		{
+			switch (hover)
+			{
+			case PagesOfCustomer::PAGE_PROFILE:
+
+				return;
+
+			case PagesOfCustomer::PAGE_CHANGEPASSWORD:
+				//nextPage = PageType::
+				return;
+
+			case PagesOfCustomer::PAGE_HISTORYTRANSACTION:
+				//nextPage = PageType::
+				return;
+
+			case PagesOfCustomer::PAGE_POINTTRANSACTION:
+				nextPage = PageType::PAGE_POINTRANSACTION;
+				return;
+
+			default:
+				break;
+			}
+		}
+
 		if (hover != lastHover)
 		{
 			for (int i = 0; i < menu.size(); i++)
