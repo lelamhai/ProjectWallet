@@ -46,6 +46,18 @@ AccountModel ManageAccount::SignIn(string user, string pass)
     return AccountModel();
 }
 
+AccountModel ManageAccount::FindByPhone(string phone)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getNumberPhone() == phone)
+        {
+            return listAccount[i];
+        }
+    }
+    return AccountModel();
+}
+
 bool ManageAccount::CheckPhone(string phone)
 {
     for (int i = 0; i < listAccount.size(); i++)
@@ -104,4 +116,50 @@ bool ManageAccount::LoadData()
     else {
         return true;
     }
+}
+
+AccountModel ManageAccount::FindByUserID(int userID)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getUserID() == userID)
+        {
+            return listAccount[i];
+        }
+    }
+}
+
+bool ManageAccount::DeductPoint(AccountModel model, int point)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (model.getUserID() == listAccount[i].getUserID())
+        {
+            int newPoint = listAccount[i].getPoint() - point;
+            listAccount[i].setPoint(newPoint);
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
+}
+
+bool ManageAccount::AddPoint(AccountModel model, int point)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (model.getUserID() == listAccount[i].getUserID())
+        {
+            int newPoint = listAccount[i].getPoint() + point;
+            listAccount[i].setPoint(newPoint);
+            SaveFile();
+            return true;
+        }
+    }
+    return false;
+}
+
+vector<AccountModel> ManageAccount::GetAllAccount()
+{
+    return listAccount;
 }

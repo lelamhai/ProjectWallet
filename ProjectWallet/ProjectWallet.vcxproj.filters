@@ -117,6 +117,12 @@
     <ClCompile Include="pageChangePassword.cpp">
       <Filter>Source Files\FE\PageOfCustomer</Filter>
     </ClCompile>
+    <ClCompile Include="manageTransaction.cpp">
+      <Filter>Source Files\BE</Filter>
+    </ClCompile>
+    <ClCompile Include="transactionModel.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -184,6 +190,12 @@
     </ClInclude>
     <ClInclude Include="PageChangePassword.h">
       <Filter>Header Files\FE\PageOfCustomer</Filter>
+    </ClInclude>
+    <ClInclude Include="manageTransaction.h">
+      <Filter>Header Files\BE</Filter>
+    </ClInclude>
+    <ClInclude Include="transactionModel.h">
+      <Filter>Header Files\Models</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
