@@ -57,7 +57,7 @@ void PageAdmin::handle()
 			Sleep(150);
 		}
 
-		if (GetAsyncKeyState(VK_ESCAPE) & 0x8000)
+		if (GetAsyncKeyState(VK_ESCAPE) & 0x0001)
 		{
 			nextPage = PageType::PAGE_SIGNIN;
 			return;

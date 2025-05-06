@@ -1,7 +1,7 @@
 #include "BasePage.h"
 #include "PageSignIn.h"
 #include "PageCustomer.h"
-//#include "PageProfile"
+#include "PageProfile.h"
 #include "PageChangePassword.h"
 #include "PageHistoryTransaction.h"
 #include "PagePointTransaction.h"
@@ -37,7 +37,9 @@ void main()
                 break;
 
             case PageType::PAGE_PROFILE:
-                //page->setUserID(currentUserID);
+                page = new PageProfile();
+                page->setUserID(currentUserID);
+                page->main();
                 break;
 
             case PageType::PAGE_CHANGEPASSWORD:

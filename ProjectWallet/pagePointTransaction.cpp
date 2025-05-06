@@ -68,15 +68,8 @@ void PagePointTransaction::setUI()
 
 void PagePointTransaction::handle()
 {
-	
 	while (true)
 	{
-		if (GetAsyncKeyState(VK_ESCAPE) & 0x0001)
-		{
-			nextPage = PageType::PAGE_CUSTOMER;
-			return;
-		}
-
 		if (currentPageTransaction == StateInputTransaction::NUMBERPHONE)
 		{
 			ManageTransaction t;

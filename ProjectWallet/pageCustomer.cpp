@@ -68,7 +68,7 @@ void PageCustomer::handle()
 			switch (hover)
 			{
 			case PagesOfCustomer::PAGE_PROFILE:
-
+				nextPage = PageType::PAGE_PROFILE;
 				return;
 
 			case PagesOfCustomer::PAGE_CHANGEPASSWORD:
