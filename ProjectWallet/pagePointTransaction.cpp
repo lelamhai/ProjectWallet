@@ -93,13 +93,11 @@ void PagePointTransaction::handle()
 				else {
 					listValidation[0].setContent("SDT.khong ton tai.");
 					listValidation[0].display();
-					continue;
 				}
 			}
 			else {
 				listValidation[0].setContent("Khong hop le.");
 				listValidation[0].display();
-				continue;
 			}
 
 
@@ -144,7 +142,6 @@ void PagePointTransaction::handle()
 			{
 				listValidation[1].setContent("So diem phai lon hon 0");
 				listValidation[1].display();
-				continue;
 			}
 
 			switch (listInput[1].getEndKey())
