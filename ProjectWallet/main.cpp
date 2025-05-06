@@ -3,7 +3,7 @@
 #include "PageCustomer.h"
 //#include "PageProfile"
 #include "PageChangePassword.h"
-//#include "PageHistoryTransaction"
+#include "PageHistoryTransaction.h"
 #include "PagePointTransaction.h"
 
 #include "PageAdmin.h"
@@ -19,10 +19,12 @@ void main()
 {
 	PageType currentPageType = PageType::PAGE_SIGNIN;
 	BasePage* page = nullptr;
+    int currentUserID = -1;
 	
     while (currentPageType != EXIT) {
         switch (currentPageType) {
             case PageType::PAGE_SIGNIN:
+                currentUserID = -1;
                 page = new PageSignIn();
                 page->main();
                 break;
@@ -31,22 +33,27 @@ void main()
                 showCur(0);
                 page = new PageCustomer();
                 page->main();
+                currentUserID = Singleton::getInstance()->UserID;
                 break;
 
             case PageType::PAGE_PROFILE:
+                //page->setUserID(currentUserID);
                 break;
 
             case PageType::PAGE_CHANGEPASSWORD:
                 showCur(0);
                 page = new PageChangePassword();
+                page->setUserID(currentUserID);
                 page->main();
                 break;
                 
             case PageType::PAGE_HISTORYTRANSACTION:
+                //page->setUserID(currentUserID);
                 break;
 
             case PageType::PAGE_POINTRANSACTION:
                 page = new PagePointTransaction();
+                page->setUserID(currentUserID);
                 page->main();
                 break;
 

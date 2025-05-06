@@ -1,6 +1,7 @@
 #pragma once
 #include "BasePage.h"
 #include "ManageAccount.h"
+#include "ManageTransaction.h"
 
 class PagePointTransaction : public BasePage
 {
@@ -11,7 +12,7 @@ private:
 		POINT		= 1,
 		ENTER		= 2,
 
-		EXIT = -1
+		EXIT		= -1
 	};
 	StateInputTransaction currentPageTransaction;
 
@@ -30,6 +31,7 @@ public:
 	void main() override;
 	void setUI() override;
 	void handle() override;
+	void cleanInput();
 	PagePointTransaction();
 	~PagePointTransaction();
 };

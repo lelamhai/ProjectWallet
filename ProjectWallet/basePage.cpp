@@ -8,6 +8,16 @@ BasePage::~BasePage()
 {
 }
 
+void BasePage::setUserID(int id)
+{ 
+	userID = id; 
+}
+
+int BasePage::getUserID()
+{ 
+	return userID; 
+}
+
 PageType BasePage::getNextPage()
 {
 	return nextPage;

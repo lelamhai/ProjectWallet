@@ -39,7 +39,7 @@ protected:
     Text txtSayHi;
     InputField inputBack;
 
-    int UserID = -1;
+    int userID = -1;
     PageType nextPage = EXIT;
 
 public:
@@ -51,6 +51,8 @@ public:
     virtual void setUI();
     virtual void handle();
     virtual void clean();
+    void setUserID(int id);
+    int getUserID();
     PageType getNextPage();
 
 	BasePage();

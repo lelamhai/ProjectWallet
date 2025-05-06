@@ -159,7 +159,7 @@ void PageChangePassword::handle()
 			if (listInput[1].getText() == listInput[2].getText())
 			{
 				ManageAccount a;
-				bool result = a.ChangePassword(Singleton::getInstance()->UserID, listInput[0].getText(), listInput[1].getText());
+				bool result = a.ChangePassword(userID, listInput[0].getText(), listInput[1].getText());
 				if (result)
 				{
 					nextPage = PageType::PAGE_SIGNIN;

@@ -1,7 +1,7 @@
 #include "PageSignIn.h"
 PageSignIn::PageSignIn()
 {
-	UserID = -1;
+	userID = -1;
 }
 
 PageSignIn::~PageSignIn()
@@ -133,9 +133,9 @@ void PageSignIn::handle()
 				AccountModel model = a.SignIn(username, password);
 				if (model.getNumberPhone() != "")
 				{
-					UserID = model.getUserID();
+					Singleton::getInstance()->UserID = model.getUserID();
 					Singleton::getInstance()->Name = model.getFirstName();
-					Singleton::getInstance()->UserID = UserID;
+					
 					if (!model.getIsActive())
 					{
 						nextPage = PageType::PAGE_CUSTOMER;

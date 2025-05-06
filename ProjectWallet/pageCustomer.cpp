@@ -57,7 +57,7 @@ void PageCustomer::handle()
 			Sleep(150);
 		}
 
-		if (GetAsyncKeyState(VK_ESCAPE) & 0x8000)
+		if (GetAsyncKeyState(VK_ESCAPE) & 0x0001)
 		{
 			nextPage = PageType::PAGE_SIGNIN;
 			return;
@@ -76,7 +76,7 @@ void PageCustomer::handle()
 				return;
 
 			case PagesOfCustomer::PAGE_HISTORYTRANSACTION:
-				//nextPage = PageType::
+				nextPage = PageType::PAGE_HISTORYTRANSACTION;
 				return;
 
 			case PagesOfCustomer::PAGE_POINTTRANSACTION:

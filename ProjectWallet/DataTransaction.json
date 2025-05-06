@@ -1,0 +1,18 @@
+{
+    "Data": [
+        {
+            "Datetime": "06/05/2025 10:32:18",
+            "Point": 10,
+            "ReceiverUserID": 1,
+            "SenderUserID": 0,
+            "TransactionID": 0
+        },
+        {
+            "Datetime": "06/05/2025 10:35:10",
+            "Point": 60,
+            "ReceiverUserID": 0,
+            "SenderUserID": 1,
+            "TransactionID": 2
+        }
+    ]
+}
