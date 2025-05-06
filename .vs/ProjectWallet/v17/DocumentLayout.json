@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageWallet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PageManageWallet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageUserTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\pageUserTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageManageWallet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\pageManageWallet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageManageAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\pageManageAccount.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageWallet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PageManageWallet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PageManageAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageAdmin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\pageAdmin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageAdmin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PageAdmin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageUserTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PageUserTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageHistoryTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PageHistoryTransaction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\BasePage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\BasePage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageHistoryTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\pageHistoryTransaction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,78 +55,130 @@
           ]
         },
         {
-          "DockedWidth": 142,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 101,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "pageManageWallet.cpp",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageManageWallet.cpp",
-              "RelativeDocumentMoniker": "ProjectWallet\\pageManageWallet.cpp",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageManageWallet.cpp",
-              "RelativeToolTip": "ProjectWallet\\pageManageWallet.cpp",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAmwFIAAAAVAAAA",
+              "DocumentIndex": 6,
+              "Title": "PageHistoryTransaction.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageHistoryTransaction.h",
+              "RelativeDocumentMoniker": "ProjectWallet\\PageHistoryTransaction.h",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageHistoryTransaction.h",
+              "RelativeToolTip": "ProjectWallet\\PageHistoryTransaction.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-06T10:35:17.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PageUserTransaction.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageUserTransaction.h",
+              "RelativeDocumentMoniker": "ProjectWallet\\PageUserTransaction.h",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageUserTransaction.h",
+              "RelativeToolTip": "ProjectWallet\\PageUserTransaction.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-06T10:32:51.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "pageHistoryTransaction.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageHistoryTransaction.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\pageHistoryTransaction.cpp",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageHistoryTransaction.cpp",
+              "RelativeToolTip": "ProjectWallet\\pageHistoryTransaction.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-06T10:25:00.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PageAdmin.h",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageAdmin.h",
-              "RelativeDocumentMoniker": "ProjectWallet\\PageAdmin.h",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageAdmin.h",
-              "RelativeToolTip": "ProjectWallet\\PageAdmin.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-06T10:18:39.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PageManageWallet.h",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageWallet.h",
-              "RelativeDocumentMoniker": "ProjectWallet\\PageManageWallet.h",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageWallet.h",
-              "RelativeToolTip": "ProjectWallet\\PageManageWallet.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-06T10:22:14.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PageManageAccount.h",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageAccount.h",
-              "RelativeDocumentMoniker": "ProjectWallet\\PageManageAccount.h",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageAccount.h",
-              "RelativeToolTip": "ProjectWallet\\PageManageAccount.h",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-06T10:22:20.102Z",
+              "WhenOpened": "2025-05-06T10:35:44.023Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 142,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 183,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageManageWallet.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageWallet.h",
+              "RelativeDocumentMoniker": "ProjectWallet\\PageManageWallet.h",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\PageManageWallet.h",
+              "RelativeToolTip": "ProjectWallet\\PageManageWallet.h",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-06T10:42:45.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "pageManageAccount.cpp",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageManageAccount.cpp",
-              "RelativeDocumentMoniker": "ProjectWallet\\pageManageAccount.cpp",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageManageAccount.cpp",
-              "RelativeToolTip": "ProjectWallet\\pageManageAccount.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAswBsAAAABAAAA",
+              "Title": "pageManageWallet.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageManageWallet.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\pageManageWallet.cpp",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageManageWallet.cpp",
+              "RelativeToolTip": "ProjectWallet\\pageManageWallet.cpp",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAswGUAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-06T10:24:49.814Z",
+              "WhenOpened": "2025-05-06T10:42:43.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pageAdmin.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageAdmin.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\pageAdmin.cpp",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageAdmin.cpp",
+              "RelativeToolTip": "ProjectWallet\\pageAdmin.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-06T10:42:30.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BasePage.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\BasePage.h",
+              "RelativeDocumentMoniker": "ProjectWallet\\BasePage.h",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\BasePage.h",
+              "RelativeToolTip": "ProjectWallet\\BasePage.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-06T10:38:48.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\main.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\main.cpp",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\main.cpp",
+              "RelativeToolTip": "ProjectWallet\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-06T10:37:54.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "pageUserTransaction.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageUserTransaction.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\pageUserTransaction.cpp",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\PTIT\\HK4\\C\u002B\u002B\\Project\\ProjectWallet\\ProjectWallet\\pageUserTransaction.cpp",
+              "RelativeToolTip": "ProjectWallet\\pageUserTransaction.cpp",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAG4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-06T10:33:53.771Z",
               "EditorCaption": ""
             }
           ]

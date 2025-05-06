@@ -1,5 +1,6 @@
 #include "BasePage.h"
 #include "PageSignIn.h"
+
 #include "PageCustomer.h"
 #include "PageProfile.h"
 #include "PageChangePassword.h"
@@ -11,6 +12,7 @@
 #include "PageManageWallet.h"
 #include "PageSignUp.h"
 #include "PageForgotPassword.h"
+#include "PageUserTransaction.h"
 
 #include <iostream>
 using namespace std;
@@ -28,12 +30,7 @@ void main()
                 page = new PageSignIn();
                 page->main();
                 break;
-
-            case PageType::PAGE_HISTORYTRANSACTION:
-                page = new PageHistoryTransaction();
-                page->setUserID(currentUserID);
-                page->main();
-                break;
+            
                 
 
 
@@ -59,6 +56,12 @@ void main()
 
             case PageType::PAGE_POINTRANSACTION:
                 page = new PagePointTransaction();
+                page->setUserID(currentUserID);
+                page->main();
+                break;
+
+            case PageType::PAGE_HISTORYTRANSACTION:
+                page = new PageHistoryTransaction();
                 page->setUserID(currentUserID);
                 page->main();
                 break;
@@ -94,8 +97,15 @@ void main()
                 showCur(0);
                 page = new PageManageWallet();
                 page->main();
+                currentUserID = page->getUserID();
                 break;
 
+            case PageType::PAGE_USERTRANSACTION:
+                showCur(0);
+                page = new PageUserTransaction();
+                page->setUserID(currentUserID);
+                page->main();
+                break;
             
 
             default:

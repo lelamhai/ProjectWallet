@@ -98,7 +98,7 @@ void PageManageWallet::handle()
 
 		if (currentFunction == Function::USERTRANSACTION)
 		{
-			nextPage = PageType::PAGE_FORGOTPASSWORD;
+			nextPage = PageType::PAGE_USERTRANSACTION;
 			return;
 		}
 

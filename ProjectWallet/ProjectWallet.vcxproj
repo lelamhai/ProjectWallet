@@ -148,6 +148,7 @@
     <ClCompile Include="pageProfile.cpp" />
     <ClCompile Include="pageSignIn.cpp" />
     <ClCompile Include="pageSignUp.cpp" />
+    <ClCompile Include="pageUserTransaction.cpp" />
     <ClCompile Include="pagingData.cpp" />
     <ClCompile Include="sha256.cpp" />
     <ClCompile Include="singleton.cpp" />
@@ -178,6 +179,7 @@
     <ClInclude Include="PageProfile.h" />
     <ClInclude Include="PageSignIn.h" />
     <ClInclude Include="PageSignUp.h" />
+    <ClInclude Include="PageUserTransaction.h" />
     <ClInclude Include="PagingData.h" />
     <ClInclude Include="sha256.h" />
     <ClInclude Include="Singleton.h" />

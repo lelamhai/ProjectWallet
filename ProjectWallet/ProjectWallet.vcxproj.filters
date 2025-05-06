@@ -132,6 +132,9 @@
     <ClCompile Include="pageHistoryTransaction.cpp">
       <Filter>Source Files\FE\PageOfCustomer</Filter>
     </ClCompile>
+    <ClCompile Include="pageUserTransaction.cpp">
+      <Filter>Source Files\FE\PageOfAdmin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -214,6 +217,9 @@
     </ClInclude>
     <ClInclude Include="PageHistoryTransaction.h">
       <Filter>Header Files\FE\PageOfCustomer</Filter>
+    </ClInclude>
+    <ClInclude Include="PageUserTransaction.h">
+      <Filter>Header Files\FE\PageOfAdmin</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
