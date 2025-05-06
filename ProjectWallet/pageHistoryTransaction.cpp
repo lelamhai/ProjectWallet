@@ -58,6 +58,110 @@ void PageHistoryTransaction::handle()
 {
 	while (true)
 	{
+		ManageTransaction t;
+		ManageAccount a;
+		PagingData<TransactionModel> page(t.GetAllTransaction(userID), 5);
+		auto info = page.getPageInfo(pageNumber);
+		vector<TransactionModel> data = info.items;
 
+		int posX = 4;
+		int posY = PADDING_TOP + 5;
+
+		int hover = 0;
+		int lastHover = -1;
+		while (true)
+		{
+			if (GetAsyncKeyState(VK_LEFT) & 0x8000)
+			{
+				if (pageNumber > 1)
+				{
+					hover = 0;
+					lastHover = -1;
+					pageNumber -= 1;
+
+					PagingData<TransactionModel> page(t.GetAllTransaction(userID), 5);
+					auto info = page.getPageInfo(pageNumber);
+					data = info.items;
+					cleanDataUI();
+				}
+				Sleep(150);
+			}
+
+			if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
+			{
+				PagingData<TransactionModel> page(t.GetAllTransaction(userID), 5);
+				int totalPage = page.getTotalPages();
+				if (pageNumber < totalPage)
+				{
+					hover = 0;
+					lastHover = -1;
+					pageNumber += 1;
+					auto info = page.getPageInfo(pageNumber);
+					data = info.items;
+					cleanDataUI();
+				}
+
+				Sleep(150);
+			}
+
+			if (GetAsyncKeyState(VK_ESCAPE) & 0x0001)
+			{
+				nextPage = PageType::PAGE_CUSTOMER;
+				return;
+			}
+
+			if (hover != lastHover)
+			{
+				for (int i = 0; i < data.size(); i++)
+				{
+					setColorText(ColorCode_DarkGreen);
+					string status = "Tien Vao";
+					if (userID == data[i].getSenderUserID())
+					{
+						setColorText(ColorCode_DarkRed);
+						status = "Tien Ra";
+					}
+
+					gotoXY(posX, posY + (2 * i));
+					cout << status;
+
+					gotoXY(posX + 15, posY + (2 * i));
+					cout << data[i].getPoint();
+
+					gotoXY(posX + 15 + 10, posY + (2 * i));
+					cout << data[i].getDatime();
+
+					gotoXY(posX + 15 + 10 + 20, posY + (2 * i));
+					cout << a.FindByUserID(data[i].getReceiverUserID()).getNumberPhone();
+				}
+				lastHover = hover;
+				paging();
+			}
+		}
+	}
+}
+
+void PageHistoryTransaction::paging()
+{
+	ManageTransaction t;
+	PagingData<TransactionModel> page(t.GetAllTransaction(userID), 5);
+
+	string sPaging = "Trang " + to_string(pageNumber) + '/' + to_string(page.getTotalPages());
+
+	txtPagging.setContent(sPaging);
+	txtPagging.display();
+}
+
+void PageHistoryTransaction::cleanDataUI()
+{
+	int posX = 3;
+	int posY = PADDING_TOP + 5;
+
+	string blankFill;
+	blankFill.resize(60 - 1, ' ');
+	for (int i = 0; i < 9; i++)
+	{
+		gotoXY(posX, posY + i);
+		cout << blankFill;
 	}
 }

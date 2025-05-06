@@ -29,6 +29,14 @@ void main()
                 page->main();
                 break;
 
+            case PageType::PAGE_HISTORYTRANSACTION:
+                page = new PageHistoryTransaction();
+                page->setUserID(currentUserID);
+                page->main();
+                break;
+                
+
+
             case PageType::PAGE_CUSTOMER:
                 showCur(0);
                 page = new PageCustomer();
@@ -48,10 +56,6 @@ void main()
                 page->setUserID(currentUserID);
                 page->main();
                 break;
-                
-            case PageType::PAGE_HISTORYTRANSACTION:
-                //page->setUserID(currentUserID);
-                break;
 
             case PageType::PAGE_POINTRANSACTION:
                 page = new PagePointTransaction();
@@ -60,6 +64,7 @@ void main()
                 break;
 
       
+
 
             case PageType::PAGE_ADMIN:
                 showCur(0);
