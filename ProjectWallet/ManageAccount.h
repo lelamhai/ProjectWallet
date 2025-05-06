@@ -19,6 +19,7 @@ private:
 public:
 	bool SignUp(string last, string first, string mail, string password);
 	AccountModel SignIn(string user, string pass);
+	void Active(int userID);
 	bool AddPoint(AccountModel model, int point);
 	bool DeductPoint(AccountModel model, int point);
 	vector<AccountModel> LoadAccount(const string& keyword);

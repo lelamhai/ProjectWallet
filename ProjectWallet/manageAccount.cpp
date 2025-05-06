@@ -46,6 +46,19 @@ AccountModel ManageAccount::SignIn(string user, string pass)
     return AccountModel();
 }
 
+void ManageAccount::Active(int userID)
+{
+    for (int i = 0; i < listAccount.size(); i++)
+    {
+        if (listAccount[i].getUserID() == userID)
+        {
+            listAccount[i].setIsActive(true);
+            SaveFile();
+            return;
+        }
+    }
+}
+
 vector<AccountModel> ManageAccount::LoadAccount(const string& keyword) {
 
     if (keyword != "")

@@ -29,6 +29,7 @@ void main()
                 currentUserID = -1;
                 page = new PageSignIn();
                 page->main();
+                currentUserID = Singleton::getInstance()->UserID;
                 break;
             
                 

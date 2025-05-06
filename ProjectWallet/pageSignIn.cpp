@@ -138,7 +138,8 @@ void PageSignIn::handle()
 					
 					if (!model.getIsActive())
 					{
-						nextPage = PageType::PAGE_CUSTOMER;
+						a.Active(Singleton::getInstance()->UserID);
+						nextPage = PageType::PAGE_CHANGEPASSWORD;
 						return;
 					}
 					nextPage = PageType::PAGE_CUSTOMER;
