@@ -85,14 +85,14 @@ void main()
                 page->main();
                 break;
 
-            case PageType::PAGE_MANAGEWALLET:
-                showCur(0);
-                page = new PageManageWallet();
+            case PageType::PAGE_SIGNUP:
+                page = new PageSignUp();
                 page->main();
                 break;
 
-            case PageType::PAGE_SIGNUP:
-                page = new PageSignUp();
+            case PageType::PAGE_MANAGEWALLET:
+                showCur(0);
+                page = new PageManageWallet();
                 page->main();
                 break;
 

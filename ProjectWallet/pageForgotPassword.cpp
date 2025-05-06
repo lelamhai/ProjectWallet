@@ -156,7 +156,7 @@ void PageForgotPassword::handle()
 
 		if (currentFP == StateInputFP::EXIT)
 		{
-			nextPage = PageType::PAGE_ADMIN;
+			nextPage = PageType::PAGE_MANAGEACCOUNT;
 			return;
 		}
 	}

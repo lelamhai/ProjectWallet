@@ -72,11 +72,11 @@ void PageAdmin::handle()
 				return;
 
 			case PagesOfAdmin::PAGE_CREATEACCOUNT:
-				//nextPage = PageType::
+				nextPage = PageType::PAGE_SIGNUP;
 				return;
 
 			case PagesOfAdmin::PAGE_LISTWALLET:
-				//nextPage = PageType::
+				nextPage = PageType::PAGE_MANAGEWALLET;
 				return;
 
 			default:

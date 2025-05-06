@@ -317,6 +317,7 @@ void PageManageAccount::searchData()
 		}
 	}
 }
+
 void PageManageAccount::loadData()
 {
 	PagingData<AccountModel> page(a.LoadAccount(search), 5);

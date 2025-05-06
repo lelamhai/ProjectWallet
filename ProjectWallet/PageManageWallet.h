@@ -1,14 +1,37 @@
 #pragma once
 #include "BasePage.h"
+#include "PagingData.h"
+#include "ManageAccount.h"
 
 class PageManageWallet:public BasePage
 {
 private:
-	vector<string> titleGrid = { "Ho Va Ten", "Diem", "So Dien Thoai", "Trang Thai" };
+	enum Function
+	{
+		SELECT,
+		SEARCH,
+		USERTRANSACTION,
+		BACK
+	};
+	Function currentFunction = Function::SELECT;
+
+	vector<string> titleGrid = {
+		"Ho Va Ten", 
+		"Diem", 
+		"So Dien Thoai", 
+		"Trang Thai" 
+	};
 	vector<Text> listTitle;
 
-	vector<string> titleTutorial = { "Phim Nong", "F1: Tim Kiem", "F2: Thao Tac Du Lieu", "F3: Tra Cuu Vi" };
+	vector<string> titleTutorial = { 
+		"Phim Nong", 
+		"F1: Tim Kiem", 
+		"F2: Thao Tac Du Lieu", 
+		"F3: Xem Lich Su Vi"
+	};
 	vector<Text> listTextTutorial;
+
+	ManageAccount a;
 
 	Text txtPagging;
 	int pageNumber = 1;
@@ -18,6 +41,11 @@ public:
 	void main() override;
 	void setUI() override;
 	void handle() override;
+	void selectData();
+	void searchData();
+	void loadData();
+	void paging();
+	void cleanDataUI();
 	PageManageWallet();
 	~PageManageWallet();
 };

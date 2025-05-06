@@ -126,10 +126,10 @@
     <ClCompile Include="pagePointTransaction.cpp">
       <Filter>Source Files\FE\PageOfCustomer</Filter>
     </ClCompile>
-    <ClCompile Include="pageHistoryTransaction.cpp">
-      <Filter>Source Files\FE</Filter>
-    </ClCompile>
     <ClCompile Include="pageProfile.cpp">
+      <Filter>Source Files\FE\PageOfCustomer</Filter>
+    </ClCompile>
+    <ClCompile Include="pageHistoryTransaction.cpp">
       <Filter>Source Files\FE\PageOfCustomer</Filter>
     </ClCompile>
   </ItemGroup>
@@ -209,10 +209,10 @@
     <ClInclude Include="PagePointTransaction.h">
       <Filter>Header Files\FE\PageOfCustomer</Filter>
     </ClInclude>
-    <ClInclude Include="PageHistoryTransaction.h">
-      <Filter>Header Files\FE</Filter>
-    </ClInclude>
     <ClInclude Include="PageProfile.h">
+      <Filter>Header Files\FE\PageOfCustomer</Filter>
+    </ClInclude>
+    <ClInclude Include="PageHistoryTransaction.h">
       <Filter>Header Files\FE\PageOfCustomer</Filter>
     </ClInclude>
   </ItemGroup>
