@@ -2,10 +2,10 @@
     "Data": [
         {
             "FirstName": "hai",
-            "IsActive": false,
+            "IsActive": true,
             "LastName": "le",
             "NumberPhone": "0969128313",
-            "Password": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
+            "Password": "60c60cbfe6692965c12ef82dbf1790badbd4decf78544733443871b5199a6d1b",
             "Point": 150,
             "UserID": 0
         },

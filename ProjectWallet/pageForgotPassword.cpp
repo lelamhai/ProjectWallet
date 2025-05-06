@@ -125,7 +125,21 @@ void PageForgotPassword::handle()
 		{
 			if (listInput[0].getText() == listInput[1].getText())
 			{
-
+				ManageAccount a;
+				bool result = a.ForgotPassword(userID, listInput[0].getText());
+				if (result)
+				{
+					txtMessage.clean();
+					txtMessage.setColor(ColorCode_DarkGreen);
+					txtMessage.setContent("Doi mat khau thanh cong.");
+					cleanInput();
+				}
+				else {
+					txtMessage.clean();
+					txtMessage.setColor(ColorCode_DarkGreen);
+					txtMessage.setContent("He thong dang bi loi.");
+					txtMessage.setColor(ColorCode_DarkRed);
+				}
 			}
 			else {
 				txtMessage.clean();
@@ -145,5 +159,13 @@ void PageForgotPassword::handle()
 			nextPage = PageType::PAGE_ADMIN;
 			return;
 		}
+	}
+}
+
+void PageForgotPassword::cleanInput()
+{
+	for (int i = 0; i < listInput.size(); i++)
+	{
+		listInput[i].clean();
 	}
 }

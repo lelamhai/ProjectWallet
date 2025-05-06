@@ -1,5 +1,6 @@
 #pragma once
 #include "BasePage.h"
+#include "ManageAccount.h"
 
 class PageForgotPassword:public BasePage
 {
@@ -28,6 +29,7 @@ public:
 	void main() override;
 	void setUI() override;
 	void handle() override;
+	void cleanInput();
 	PageForgotPassword();
 	~PageForgotPassword();
 };

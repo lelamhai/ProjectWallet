@@ -76,16 +76,18 @@ void main()
                 showCur(0);
                 page = new PageManageAccount();
                 page->main();
+                currentUserID = page->getUserID();
+                break;
+
+            case PageType::PAGE_FORGOTPASSWORD:
+                page = new PageForgotPassword();
+                page->setUserID(currentUserID);
+                page->main();
                 break;
 
             case PageType::PAGE_MANAGEWALLET:
                 showCur(0);
                 page = new PageManageWallet();
-                page->main();
-                break;
-
-            case PageType::PAGE_FORGOTPASSWORD:
-                page = new PageForgotPassword();
                 page->main();
                 break;
 
