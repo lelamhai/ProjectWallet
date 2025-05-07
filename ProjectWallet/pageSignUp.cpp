@@ -219,7 +219,7 @@ void PageSignUp::handle()
 
 				showCur(0);
 				txtMessage.display();
-				Sleep(5000);
+				Sleep(DELAY);
 				txtMessage.setColor(ColorCode_DarkYellow);
 				currentPageSignUp = StateInputSignUp::LASTNAME;
 			}

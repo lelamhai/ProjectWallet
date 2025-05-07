@@ -20,13 +20,6 @@
             "ReceiverUserID": 1,
             "SenderUserID": 0,
             "TransactionID": 12
-        },
-        {
-            "Datetime": "07/05/2025 10:03:58",
-            "Point": 10,
-            "ReceiverUserID": 1,
-            "SenderUserID": 0,
-            "TransactionID": 12
         }
     ]
 }
