@@ -15,7 +15,7 @@ private:
 	vector<string> menu = {
 		"Thong Tin",
 		"Doi Mat Khau",
-		"Xem Vi",
+		"Xem Giao Dich",
 		"Chuyen Diem"
 	};
 

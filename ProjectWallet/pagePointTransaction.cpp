@@ -140,7 +140,7 @@ void PagePointTransaction::handle()
 			int point = stoi(listInput[1].getText());
 			if (point <= 0)
 			{
-				listValidation[1].setContent("So diem phai lon hon 0");
+				listValidation[1].setContent("So diem khong hop le.");
 				listValidation[1].display();
 			}
 
@@ -176,26 +176,38 @@ void PagePointTransaction::handle()
 		if (currentPageTransaction == StateInputTransaction::ENTER)
 		{
 			ManageTransaction t;
+			ManageAccount a;
 
-			if (t.CheckPointOfWallet(Singleton::getInstance()->UserID, stoi(listInput[1].getText())))
+			if (a.FindByPhone(listInput[0].getText()).getNumberPhone() != "")
 			{
-				t.TransactionPoint(Singleton::getInstance()->UserID, listInput[0].getText(), stoi(listInput[1].getText()));
-				ManageAccount a;
-				AccountModel model = a.FindByUserID(Singleton::getInstance()->UserID);
-				txtPoint.clean();
-				txtPoint.setContent(to_string(model.getPoint()));
-				txtPoint.display();
+				if (t.CheckPointOfWallet(Singleton::getInstance()->UserID, stoi(listInput[1].getText())))
+				{
+					t.TransactionPoint(Singleton::getInstance()->UserID, listInput[0].getText(), stoi(listInput[1].getText()));
+					ManageAccount a;
+					AccountModel model = a.FindByUserID(Singleton::getInstance()->UserID);
+					txtPoint.clean();
+					txtPoint.setContent(to_string(model.getPoint()));
+					txtPoint.display();
 
-				txtMessage.clean();
-				txtMessage.setColor(ColorCode_DarkGreen);
-				txtMessage.setContent("Chuyen diem thanh cong.");
-				cleanInput();
+					txtMessage.clean();
+					txtMessage.setColor(ColorCode_DarkGreen);
+					txtMessage.setContent("Chuyen diem thanh cong.");
+					cleanInput();
+				}
+				else {
+					txtMessage.clean();
+					txtMessage.setContent("So diem chuyen khong du.");
+					txtMessage.display();
+				}
 			}
-			else {
+			else
+			{
 				txtMessage.clean();
-				txtMessage.setContent("So Diem Chuyen Khong Du");
+				txtMessage.setColor(ColorCode_DarkRed);
+				txtMessage.setContent("    SDT.khong hop le.");
 				txtMessage.display();
 			}
+			
 			showCur(0);
 			txtMessage.display();
 			Sleep(5000);

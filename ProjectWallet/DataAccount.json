@@ -6,7 +6,7 @@
             "LastName": "le",
             "NumberPhone": "0969128313",
             "Password": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
-            "Point": 50,
+            "Point": 30,
             "UserID": 0
         },
         {
@@ -15,8 +15,17 @@
             "LastName": "le",
             "NumberPhone": "0969128311",
             "Password": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
-            "Point": 150,
+            "Point": 160,
             "UserID": 1
+        },
+        {
+            "FirstName": "tai",
+            "IsActive": false,
+            "LastName": "le",
+            "NumberPhone": "0969128312",
+            "Password": "e7ddab18d26563773986d31ecce596a21688ee4a7425758b23c9a7e1e8d1648a",
+            "Point": 100,
+            "UserID": 4
         }
     ]
 }
