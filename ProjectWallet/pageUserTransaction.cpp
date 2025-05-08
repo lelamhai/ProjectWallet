@@ -108,7 +108,7 @@ void PageUserTransaction::handle()
 
 			if (GetAsyncKeyState(VK_ESCAPE) & 0x0001)
 			{
-				nextPage = PageType::PAGE_ADMIN;
+				nextPage = PageType::PAGE_MANAGEWALLET;
 				return;
 			}
 
