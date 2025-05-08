@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Source Files\FE">
       <UniqueIdentifier>{da34ec03-a033-447d-b85f-f93d112af774}</UniqueIdentifier>
     </Filter>
@@ -48,6 +44,10 @@
     </Filter>
     <Filter Include="Source Files\FE\PageOfCustomer">
       <UniqueIdentifier>{34132e89-8cf5-4946-a462-e91d07055ea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FE\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +135,9 @@
     <ClCompile Include="pageUserTransaction.cpp">
       <Filter>Source Files\FE\PageOfAdmin</Filter>
     </ClCompile>
+    <ClCompile Include="popupOTP.cpp">
+      <Filter>Source Files\FE</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -220,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="PageUserTransaction.h">
       <Filter>Header Files\FE\PageOfAdmin</Filter>
+    </ClInclude>
+    <ClInclude Include="PopupOTP.h">
+      <Filter>Header Files\FE</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
