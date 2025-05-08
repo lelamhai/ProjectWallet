@@ -13,12 +13,18 @@
 #include "PageSignUp.h"
 #include "PageForgotPassword.h"
 #include "PageUserTransaction.h"
+#include "backup.h"
+#include <thread>
 
 #include <iostream>
 using namespace std;
 
 void main()
 {
+    std::thread backupThread([]()
+    {
+        waitUntilTime(15, 38);
+    });
 	PageType currentPageType = PageType::PAGE_SIGNIN;
 	BasePage* page = nullptr;
     int currentUserID = -1;

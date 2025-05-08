@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="accountModel.cpp" />
+    <ClCompile Include="backup.cpp" />
     <ClCompile Include="basePage.cpp" />
     <ClCompile Include="manageTransaction.cpp" />
     <ClCompile Include="pageChangePassword.cpp" />
@@ -159,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccountModel.h" />
+    <ClInclude Include="backup.h" />
     <ClInclude Include="BasePage.h" />
     <ClInclude Include="manageTransaction.h" />
     <ClInclude Include="PageChangePassword.h" />

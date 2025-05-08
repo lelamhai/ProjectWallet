@@ -138,6 +138,9 @@
     <ClCompile Include="popupOTP.cpp">
       <Filter>Source Files\FE</Filter>
     </ClCompile>
+    <ClCompile Include="backup.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -226,6 +229,9 @@
     </ClInclude>
     <ClInclude Include="PopupOTP.h">
       <Filter>Header Files\FE</Filter>
+    </ClInclude>
+    <ClInclude Include="backup.h">
+      <Filter>Header Files\Systems</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
