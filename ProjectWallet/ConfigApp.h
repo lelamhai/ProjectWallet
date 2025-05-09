@@ -17,3 +17,6 @@ const int DELAY = 3000;
 // Time backup 24h format
 const int hourBackup = 9;
 const int minuteBackup = 14;
+
+// Max point
+const int MAX_POINT = 2000000000;

@@ -55,6 +55,7 @@ void PagePointTransaction::setUI()
 	listInput[0].setMinLen(9);
 
 	listInput[1].setMinLen(1);
+	listInput[1].setMaxLen(8);
 	listValidation[1].setPosition(20, posY - 1);
 
 
@@ -176,26 +177,68 @@ void PagePointTransaction::handle()
 		if (currentPageTransaction == StateInputTransaction::ENTER)
 		{
 			ManageTransaction t;
+			ManageAccount a;
 
-			if (t.CheckPointOfWallet(Singleton::getInstance()->UserID, stoi(listInput[1].getText())))
+			if (a.FindByPhone(listInput[0].getText()).getNumberPhone() == "" || a.FindByPhone(listInput[0].getText()).getUserID() == userID)
 			{
-				t.TransactionPoint(Singleton::getInstance()->UserID, listInput[0].getText(), stoi(listInput[1].getText()));
-				ManageAccount a;
-				AccountModel model = a.FindByUserID(Singleton::getInstance()->UserID);
-				txtPoint.clean();
-				txtPoint.setContent(to_string(model.getPoint()));
-				txtPoint.display();
-
+				txtMessage.setColor(ColorCode_DarkRed);
 				txtMessage.clean();
-				txtMessage.setColor(ColorCode_DarkGreen);
-				txtMessage.setContent("Chuyen diem thanh cong.");
-				cleanInput();
-			}
-			else {
-				txtMessage.clean();
-				txtMessage.setContent("So Diem Chuyen Khong Du");
+				txtMessage.setContent("   SDT.khong hop le.");
 				txtMessage.display();
+
+				showCur(0);
+				txtMessage.display();
+				Sleep(DELAY);
+				txtMessage.setColor(ColorCode_DarkYellow);
+
+				currentPageTransaction = StateInputTransaction::NUMBERPHONE;
+				continue;
 			}
+
+			if (stoi(listInput[1].getText()) > MAX_POINT)
+			{
+				txtMessage.setColor(ColorCode_DarkRed);
+				txtMessage.clean();
+				txtMessage.setContent("So diem qua lon.");
+				txtMessage.display();
+
+				showCur(0);
+				txtMessage.display();
+				Sleep(DELAY);
+				txtMessage.setColor(ColorCode_DarkYellow);
+
+				currentPageTransaction = StateInputTransaction::POINT;
+				continue;
+			}
+
+			if (!t.CheckPointOfWallet(userID, stoi(listInput[1].getText())))
+			{
+				txtMessage.setColor(ColorCode_DarkRed);
+				txtMessage.clean();
+				txtMessage.setContent("So diem chuyen khong du.");
+				txtMessage.display();
+
+				showCur(0);
+				txtMessage.display();
+				Sleep(DELAY);
+				txtMessage.setColor(ColorCode_DarkYellow);
+
+				currentPageTransaction = StateInputTransaction::POINT;
+				continue;
+			}
+
+			t.TransactionPoint(userID, listInput[0].getText(), stoi(listInput[1].getText()));
+			ManageAccount update;
+			AccountModel model = update.FindByUserID(userID);
+			txtPoint.clean();
+			txtPoint.setContent(to_string(model.getPoint()));
+			txtPoint.display();
+
+			txtMessage.clean();
+			txtMessage.setColor(ColorCode_DarkGreen);
+			txtMessage.setContent("Chuyen diem thanh cong.");
+			cleanInput();
+
 			showCur(0);
 			txtMessage.display();
 			Sleep(DELAY);
