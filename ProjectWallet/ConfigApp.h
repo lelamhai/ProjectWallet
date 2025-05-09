@@ -13,3 +13,7 @@ const string ADMIN = "admin";
 
 // Delay
 const int DELAY = 3000;
+
+// Time backup 24h format
+const int hourBackup = 8;
+const int minuteBackup = 22;

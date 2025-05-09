@@ -23,7 +23,7 @@ void main()
 {
     std::thread backupThread([]()
     {
-        waitUntilTime(15, 38);
+        waitUntilTime(hourBackup, minuteBackup);
     });
 	PageType currentPageType = PageType::PAGE_SIGNIN;
 	BasePage* page = nullptr;
