@@ -3,6 +3,5 @@
 #define BACKUP_H
 
 void backupJsonFile();
-void waitUntilTime(int targetHour, int targetMin);
-
+void startBackupThread(const std::string& fileBackup);
 #endif

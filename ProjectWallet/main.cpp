@@ -21,10 +21,9 @@ using namespace std;
 
 void main()
 {
-    std::thread backupThread([]()
-    {
-        waitUntilTime(hourBackup, minuteBackup);
-    });
+    startBackupThread(FILE_ACCOUNT);
+    startBackupThread(FILE_TRANSACTION);
+
 	PageType currentPageType = PageType::PAGE_SIGNIN;
 	BasePage* page = nullptr;
     int currentUserID = -1;
