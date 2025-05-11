@@ -37,9 +37,6 @@ void main()
                 currentUserID = Singleton::getInstance()->UserID;
                 break;
             
-                
-
-
             case PageType::PAGE_CUSTOMER:
                 showCur(0);
                 page = new PageCustomer();
@@ -71,9 +68,6 @@ void main()
                 page->setUserID(currentUserID);
                 page->main();
                 break;
-
-      
-
 
             case PageType::PAGE_ADMIN:
                 showCur(0);
@@ -113,7 +107,6 @@ void main()
                 page->main();
                 break;
             
-
             default:
                 page = nullptr;
                 break;
