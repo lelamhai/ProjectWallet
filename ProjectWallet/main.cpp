@@ -15,12 +15,36 @@
 #include "PageUserTransaction.h"
 #include "backup.h"
 #include <thread>
+#include "otpService.h"
 
 #include <iostream>
 using namespace std;
 
 void main()
 {
+    // gen 6chars and 30s expired
+    OtpManager otp(secretKey, otpLength, expiredTime);
+
+    otp.printUriToConsole("projectBankqw@example.com", "projectWallet");
+
+    std::string currentOTP = otp.generateCurrentOTP();
+    std::cout << "\n[Ma OTP hien tai: " << currentOTP << "]\n";
+
+
+    std::string userInput;
+    for (int i = 0; i < 3; i++)
+    {
+        std::cout << "\nNhap ma OTP: ";
+        std::cin >> userInput;
+        if (otp.verifyOTP(userInput)) {
+            std::cout << "Xac thuc thanh cong!";
+            break;
+        }
+        else {
+            std::cout << "Xac thuc khong thanh cong!\n";
+        }
+    }
+
     startBackupThread(FILE_ACCOUNT);
     startBackupThread(FILE_TRANSACTION);
 

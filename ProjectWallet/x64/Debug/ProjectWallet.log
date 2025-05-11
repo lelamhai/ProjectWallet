@@ -1,9 +1,14 @@
-﻿  backup.cpp
+﻿  The vcpkg manifest was disabled, but we found a manifest file in D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  backup.cpp
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\backup.cpp(55,34): warning C4566: character represented by universal-character-name '\u1ED3' cannot be represented in the current code page (1252)
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\backup.cpp(55,34): warning C4566: character represented by universal-character-name '\u1EA1' cannot be represented in the current code page (1252)
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\backup.cpp(56,22): warning C4566: character represented by universal-character-name '\u1ED3' cannot be represented in the current code page (1252)
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\backup.cpp(56,22): warning C4566: character represented by universal-character-name '\u1EA1' cannot be represented in the current code page (1252)
   basePage.cpp
+  manageTransaction.cpp
+  otpService.cpp
+D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\otpService.cpp(37,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  pageChangePassword.cpp
   configApp.cpp
   inputField.cpp
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\inputField.cpp(64,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
@@ -12,12 +17,8 @@ D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\inputField.cpp(202,2
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\inputField.cpp(256,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\inputField.cpp(63,6): warning C4101: 'count': unreferenced local variable
   main.cpp
-D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\main.cpp(22,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\main.cpp(23,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
   manageAccount.cpp
-  manageTransaction.cpp
-  pageAdmin.cpp
-  pageChangePassword.cpp
-  pageCustomer.cpp
   pageForgotPassword.cpp
   pageHistoryTransaction.cpp
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\PagingData.h(108,58): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
@@ -51,6 +52,8 @@ D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\PagingData.h(108,58)
               D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\pageManageAccount.cpp(118,31):
               see the first reference to 'PagingData<AccountModel>::PagingData' in 'PageManageAccount::selectData'
   
+  pageAdmin.cpp
+  pageCustomer.cpp
   pageManageWallet.cpp
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\pageManageWallet.cpp(162,25): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\pageManageWallet.cpp(239,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
@@ -87,9 +90,11 @@ D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\PagingData.h(108,58)
               D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\pageUserTransaction.cpp(65,36):
               see the first reference to 'PagingData<TransactionModel>::PagingData' in 'PageUserTransaction::handle'
   
-  popupOTP.cpp
   Generating Code...
 D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\ProjectWallet\manageAccount.cpp(222,1): warning C4715: 'ManageAccount::FindByUserID': not all control paths return a value
+  Compiling...
+  popupOTP.cpp
+  Generating Code...
   ProjectWallet.vcxproj -> D:\Ptit\Ptit\2024_2025_ky_1\C++\ProjectWallet\x64\Debug\ProjectWallet.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

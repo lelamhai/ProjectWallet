@@ -132,6 +132,7 @@
     <ClCompile Include="backup.cpp" />
     <ClCompile Include="basePage.cpp" />
     <ClCompile Include="manageTransaction.cpp" />
+    <ClCompile Include="otpService.cpp" />
     <ClCompile Include="pageChangePassword.cpp" />
     <ClCompile Include="color.cpp" />
     <ClCompile Include="configApp.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="backup.h" />
     <ClInclude Include="BasePage.h" />
     <ClInclude Include="manageTransaction.h" />
+    <ClInclude Include="otpService.h" />
     <ClInclude Include="PageChangePassword.h" />
     <ClInclude Include="ConfigApp.h" />
     <ClInclude Include="InputField.h" />
