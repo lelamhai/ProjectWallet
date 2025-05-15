@@ -1,6 +1,7 @@
 #pragma once
 #include "BasePage.h"
 #include "ManageAccount.h"
+#include "PopupOTP.h"
 
 class PageChangePassword:public BasePage
 {

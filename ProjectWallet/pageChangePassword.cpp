@@ -159,6 +159,14 @@ void PageChangePassword::handle()
 			if (listInput[1].getText() == listInput[2].getText())
 			{
 				ManageAccount a;
+
+				PopupOTP popup;
+				popup.main();
+				if (!popup.result)
+				{
+					currentFP = StateInputCP::PASSWORD_OLD;
+					continue;
+				}
 				bool result = a.ChangePassword(userID, listInput[0].getText(), listInput[1].getText());
 				if (result)
 				{

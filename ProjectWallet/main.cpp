@@ -14,32 +14,13 @@
 #include "PageForgotPassword.h"
 #include "PageUserTransaction.h"
 #include "backup.h"
-#include <thread>
-#include "otpService.h"
 
+#include <thread>
 #include <iostream>
 using namespace std;
 
 void main()
 {
-    OtpService otp;
-    string currentOTP = otp.generateCurrentOTP();
-    cout << "\n[Ma OTP hien tai: " << currentOTP << "]\n";
-
-    string userInput;
-    for (int i = 0; i < 3; i++)
-    {
-        std::cout << "\nNhap ma OTP: ";
-        std::cin >> userInput;
-        if (otp.verifyOTP(userInput)) {
-            std::cout << "Xac thuc thanh cong!";
-            break;
-        }
-        else {
-            std::cout << "Xac thuc khong thanh cong!\n";
-        }
-    }
-
     startBackupThread(FILE_ACCOUNT);
     startBackupThread(FILE_TRANSACTION);
 

@@ -226,6 +226,13 @@ void PagePointTransaction::handle()
 				currentPageTransaction = StateInputTransaction::POINT;
 				continue;
 			}
+			PopupOTP popup;
+			popup.main();
+			if (!popup.result)
+			{
+				currentPageTransaction = StateInputTransaction::NUMBERPHONE;
+				continue;
+			}
 
 			t.TransactionPoint(userID, listInput[0].getText(), stoi(listInput[1].getText()));
 			ManageAccount update;

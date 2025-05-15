@@ -2,6 +2,7 @@
 #include "BasePage.h"
 #include "ManageAccount.h"
 #include "ManageTransaction.h"
+#include "PopupOTP.h"
 
 class PagePointTransaction : public BasePage
 {
