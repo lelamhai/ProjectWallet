@@ -1,12 +1,14 @@
-#include <openssl/hmac.h>
-#include <openssl/evp.h>
 #include "otpService.h"
-
-OtpManager::OtpManager(const std::string& secret, int digits, int interval)
-    : secret(secret), digits(digits), interval(interval) {
+OtpService::OtpService()
+{
+    //printUriToConsole();
 }
 
-std::string OtpManager::base32Decode(const std::string& encoded) const {
+OtpService::~OtpService()
+{
+}
+
+string OtpService::base32Decode(const std::string& encoded) const {
     static const std::string base32Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
     std::string binaryStr;
     for (char c : encoded) {
@@ -24,8 +26,7 @@ std::string OtpManager::base32Decode(const std::string& encoded) const {
     return decoded;
 }
 
-// Chuyen doi ma OTP thanh ma hex
-std::string OtpManager::hotp(const std::string& key, unsigned long long counter) const {
+string OtpService::hotp(const std::string& key, unsigned long long counter) const {
     unsigned char counterBytes[8];
     for (int i = 7; i >= 0; --i) {
         counterBytes[i] = counter & 0xFF;
@@ -47,14 +48,13 @@ std::string OtpManager::hotp(const std::string& key, unsigned long long counter)
     return ss.str();
 }
 
-std::string OtpManager::generateCurrentOTP() const {
+string OtpService::generateCurrentOTP() const {
     time_t now = time(nullptr);
     unsigned long long counter = now / interval;
     return hotp(base32Decode(secret), counter);
 }
 
-// Dung de kiem tra ma OTP
-bool OtpManager::verifyOTP(const std::string& userOTP, int allowedDrift) const {
+bool OtpService::verifyOTP(const std::string& userOTP, int allowedDrift) const {
     time_t now = time(nullptr);
     unsigned long long counter = now / interval;
     std::string key = base32Decode(secret);
@@ -65,15 +65,15 @@ bool OtpManager::verifyOTP(const std::string& userOTP, int allowedDrift) const {
     return false;
 }
 
-// Chuyen doi ma OTPP thanh URI cho ung dung Authenticator
-std::string OtpManager::getOTPAuthURI(const std::string& accountName, const std::string& issuer) const {
-    std::ostringstream oss;
+void OtpService::printUriToConsole() {
+    string uri = getOTPAuthURI();
+    cout << "URI QR: " << uri << std::endl; // Copy ma URI nay de import vao extension Authenticator tren chrome
+}
+
+string OtpService::getOTPAuthURI()
+{
+    ostringstream oss;
     oss << "otpauth://totp/" << issuer << ":" << accountName
         << "?secret=" << secret << "&issuer=" << issuer;
     return oss.str();
-}
-
-void OtpManager::printUriToConsole(const std::string& accountName, const std::string& issuer) const {
-    std::string uri = getOTPAuthURI(accountName, issuer);
-    std::cout << "URI QR: " << uri << std::endl; // Copy ma URI nay de import vao extension Authenticator tren chrome
 }

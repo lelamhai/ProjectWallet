@@ -1,5 +1,4 @@
-#define OTPMANAGER_H
-
+#pragma once
 #include <string>
 #include <ctime>
 #include <iostream>
@@ -7,30 +6,31 @@
 #include <iomanip>
 #include <vector>
 #include <stdexcept>
+#include <openssl/hmac.h>
+#include <openssl/evp.h>
+#include "ConfigApp.h"
+#include <iostream>
+using namespace std;
 
-class OtpManager {
-public:
-    OtpManager(const std::string& secret, int digits = 6, int interval = 30);
-
-    // gen current OTP
-    std::string generateCurrentOTP() const;
-
-    // verify OTP
-    bool verifyOTP(const std::string& userOTP, int allowedDrift = 1) const;
-
-    // gen QR code
-    void printUriToConsole(const std::string& accountName, const std::string& issuer) const;
-
-    // get uri from another tool
-    std::string getOTPAuthURI(const std::string& accountName, const std::string& issuer) const;
-
+class OtpService
+{
 private:
-    std::string base32Decode(const std::string& encoded) const;
-    std::string hotp(const std::string& key, unsigned long long counter) const;
-    std::string toHex(const std::string& input) const;
+	string secret = SECRETKEY;
+	int digits = OTPLENGTH;
+	int interval = EXPIREDTIME;
 
-    std::string secret;
-    int digits;
-    int interval;
+	string accountName = ACCOUNTNAME;
+	string issuer = ISSUER;
+
+	string base32Decode(const std::string& encoded) const;
+	string hotp(const std::string& key, unsigned long long counter) const;
+
+public:
+	string generateCurrentOTP() const;
+	bool verifyOTP(const std::string& userOTP, int allowedDrift = 1) const;
+	void printUriToConsole();
+	string getOTPAuthURI();
+
+	OtpService();
+	~OtpService();
 };
-//otpService.h

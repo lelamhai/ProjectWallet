@@ -22,16 +22,11 @@ using namespace std;
 
 void main()
 {
-    // gen 6chars and 30s expired
-    OtpManager otp(secretKey, otpLength, expiredTime);
+    OtpService otp;
+    string currentOTP = otp.generateCurrentOTP();
+    cout << "\n[Ma OTP hien tai: " << currentOTP << "]\n";
 
-    otp.printUriToConsole("projectBankqw@example.com", "projectWallet");
-
-    std::string currentOTP = otp.generateCurrentOTP();
-    std::cout << "\n[Ma OTP hien tai: " << currentOTP << "]\n";
-
-
-    std::string userInput;
+    string userInput;
     for (int i = 0; i < 3; i++)
     {
         std::cout << "\nNhap ma OTP: ";
