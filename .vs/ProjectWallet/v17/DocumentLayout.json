@@ -7,20 +7,36 @@
       "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\otpService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\otpService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\popupOTP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\popupOTP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\otpService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\otpService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\PopupOTP.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PopupOTP.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\windows.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\windows.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\pageSignIn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\pageSignIn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\ConfigApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\ConfigApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\PopupOTP.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\PopupOTP.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\otpService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\otpService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\accountModel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\accountModel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\otpService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|solutionrelative:ProjectWallet\\otpService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FC3B74D-6C90-4587-B0D5-DDD91ADDA46B}|ProjectWallet\\ProjectWallet.vcxproj|D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\backup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,20 +54,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 46,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ConfigApp.h",
               "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\ConfigApp.h",
               "RelativeDocumentMoniker": "ProjectWallet\\ConfigApp.h",
               "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\ConfigApp.h",
               "RelativeToolTip": "ProjectWallet\\ConfigApp.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-07T03:26:17.06Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "accountModel.cpp",
+              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\accountModel.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\accountModel.cpp",
+              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\accountModel.cpp",
+              "RelativeToolTip": "ProjectWallet\\accountModel.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-16T03:18:09.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "windows.cpp",
+              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\windows.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\windows.cpp",
+              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\windows.cpp",
+              "RelativeToolTip": "ProjectWallet\\windows.cpp",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-16T03:15:54.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PopupOTP.h",
+              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\PopupOTP.h",
+              "RelativeDocumentMoniker": "ProjectWallet\\PopupOTP.h",
+              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\PopupOTP.h",
+              "RelativeToolTip": "ProjectWallet\\PopupOTP.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-16T03:12:05.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pageSignIn.cpp",
+              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\pageSignIn.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\pageSignIn.cpp",
+              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\pageSignIn.cpp",
+              "RelativeToolTip": "ProjectWallet\\pageSignIn.cpp",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-16T02:29:35.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "popupOTP.cpp",
+              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\popupOTP.cpp",
+              "RelativeDocumentMoniker": "ProjectWallet\\popupOTP.cpp",
+              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\popupOTP.cpp",
+              "RelativeToolTip": "ProjectWallet\\popupOTP.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-16T02:21:48.51Z",
               "EditorCaption": ""
             },
             {
@@ -62,53 +143,40 @@
               "RelativeDocumentMoniker": "ProjectWallet\\main.cpp",
               "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\main.cpp",
               "RelativeToolTip": "ProjectWallet\\main.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwCYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-15T01:51:31.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "otpService.h",
               "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\otpService.h",
               "RelativeDocumentMoniker": "ProjectWallet\\otpService.h",
               "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\otpService.h",
               "RelativeToolTip": "ProjectWallet\\otpService.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAWwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-11T02:41:37.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "otpService.cpp",
               "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\otpService.cpp",
               "RelativeDocumentMoniker": "ProjectWallet\\otpService.cpp",
               "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\otpService.cpp",
               "RelativeToolTip": "ProjectWallet\\otpService.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwFwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-11T02:41:15.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PopupOTP.h",
-              "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\PopupOTP.h",
-              "RelativeDocumentMoniker": "ProjectWallet\\PopupOTP.h",
-              "ToolTip": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\PopupOTP.h",
-              "RelativeToolTip": "ProjectWallet\\PopupOTP.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-09T00:05:46.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "backup.h",
               "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\backup.h",
               "RelativeDocumentMoniker": "ProjectWallet\\backup.h",
@@ -120,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "backup.cpp",
               "DocumentMoniker": "D:\\Ptit\\Ptit\\2024_2025_ky_1\\C\u002B\u002B\\ProjectWallet\\ProjectWallet\\backup.cpp",
               "RelativeDocumentMoniker": "ProjectWallet\\backup.cpp",
@@ -128,7 +196,8 @@
               "RelativeToolTip": "ProjectWallet\\backup.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T08:27:15.074Z"
+              "WhenOpened": "2025-05-08T08:27:15.074Z",
+              "EditorCaption": ""
             }
           ]
         }

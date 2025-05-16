@@ -20,6 +20,27 @@
             "ReceiverUserID": 1,
             "SenderUserID": 0,
             "TransactionID": 12
+        },
+        {
+            "Datetime": "16/05/2025 09:34:05",
+            "Point": 10,
+            "ReceiverUserID": 0,
+            "SenderUserID": 21,
+            "TransactionID": 6
+        },
+        {
+            "Datetime": "16/05/2025 09:37:07",
+            "Point": 10,
+            "ReceiverUserID": 0,
+            "SenderUserID": 21,
+            "TransactionID": 8
+        },
+        {
+            "Datetime": "16/05/2025 09:43:53",
+            "Point": 10,
+            "ReceiverUserID": 0,
+            "SenderUserID": 21,
+            "TransactionID": 10
         }
     ]
 }

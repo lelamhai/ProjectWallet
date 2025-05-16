@@ -22,24 +22,20 @@ void PopupOTP::setUI()
 	setColorText(ColorCode_White);
 	textbk(color);
 
-	textbk(color);
-	gotoXY(posX + 8, posY + 1);
-	cout << "Ma OTP:" + otp.generateCurrentOTP();
-
-	box(posX + 4, posY + 2, WIDTH_INPUT+1, HEIGHT_INPUT);
+	box(posX + 4, posY + 1, WIDTH_INPUT+1, HEIGHT_INPUT);
 	inputfield.setInputType(InputType::NUMBER);
-	inputfield.setPosition(posX+4, posY+2);
+	inputfield.setPosition(posX+4, posY+1);
 	inputfield.setMaxLen(5);
 	inputfield.display();
 
 	textbk(color);
-	box(posX + 4, posY + 6, 6, 2);
-	gotoXY(posX + 2 + 4, posY + 7);
+	box(posX + 4, posY + 5, 6, 2);
+	gotoXY(posX + 2 + 4, posY + 6);
 	cout << "ESC";
 
 	textbk(color);
-	box(posX + 4 + 13, posY + 6, 8, 2);
-	gotoXY(posX + 8 + 11, posY + 7);
+	box(posX + 4 + 13, posY + 5, 8, 2);
+	gotoXY(posX + 8 + 11, posY + 6);
 	cout << "ENTER";
 }
 
@@ -51,21 +47,28 @@ void PopupOTP::handle()
 		inputfield.handleInput();
 		switch (inputfield.getEndKey())
 		{
-		case  KeyState::ENTER:
-			if (otp.verifyOTP(inputfield.getText()))
-			{
+		case KeyState::ENTER: {
+			OTPStatus status = otp.checkOTPStatus(inputfield.getText());
+
+			if (status == OTPStatus::VALID) {
 				clean();
 				result = true;
 				return;
 			}
-			else {
-				setColorText(ColorCode_DarkRed);
-				textbk(color);
-				gotoXY(posX, posY + 5);
-				cout << "      OTP khong hop le.";
-				setColorText(ColorCode_DarkWhite);
-			}
+
+			setColorText(ColorCode_DarkRed);
+			textbk(color);
+			gotoXY(posX, posY + 4);
+
+			const char* message =
+				(status == OTPStatus::EXPIRED) ? "Ma OTP dung nhung da het han."
+				: "Ma OTP khong hop le.";
+			cout << "      " << message;
+
+			setColorText(ColorCode_DarkWhite);
 			break;
+		}
+
 		
 		case KeyState::ESC:
 			result = false;

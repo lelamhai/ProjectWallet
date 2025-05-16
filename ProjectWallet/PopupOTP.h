@@ -14,7 +14,7 @@ class PopupOTP
 private:
 	OtpService otp;
 	int posX = 65, posY = 0;
-	int width = 30, height = 10;
+	int width = 30, height = 9;
 	int color = ColorCode_DarkBlue;
 	InputField inputfield;
 	Text txtMessage;

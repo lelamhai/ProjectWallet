@@ -1,12 +1,9 @@
-#include "otpService.h"
-OtpService::OtpService()
-{
+#include "OtpService.h"
+
+OtpService::OtpService() {
     //printUriToConsole();
 }
-
-OtpService::~OtpService()
-{
-}
+OtpService::~OtpService() {}
 
 string OtpService::base32Decode(const std::string& encoded) const {
     static const std::string base32Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
@@ -36,6 +33,7 @@ string OtpService::hotp(const std::string& key, unsigned long long counter) cons
     unsigned char* result;
     unsigned int len;
     result = HMAC(EVP_sha1(), key.c_str(), key.length(), counterBytes, 8, nullptr, &len);
+
     int offset = result[len - 1] & 0x0F;
     int binaryCode = ((result[offset] & 0x7F) << 24) |
         ((result[offset + 1] & 0xFF) << 16) |
@@ -65,13 +63,31 @@ bool OtpService::verifyOTP(const std::string& userOTP, int allowedDrift) const {
     return false;
 }
 
-void OtpService::printUriToConsole() {
-    string uri = getOTPAuthURI();
-    cout << "URI QR: " << uri << std::endl; // Copy ma URI nay de import vao extension Authenticator tren chrome
+OTPStatus OtpService::checkOTPStatus(const std::string& userOTP) const {
+    time_t now = time(nullptr);
+    unsigned long long counter = now / interval;
+    std::string key = base32Decode(secret);
+
+    std::string currentOtp = hotp(key, counter);
+    if (userOTP == currentOtp)
+        return OTPStatus::VALID;
+
+    for (int i = -1; i <= 1; ++i) {
+        if (i == 0) continue;
+        if (hotp(key, counter + i) == userOTP)
+            return OTPStatus::EXPIRED;
+    }
+
+    return OTPStatus::INVALID;
 }
 
-string OtpService::getOTPAuthURI()
-{
+void OtpService::printUriToConsole() {
+    string uri = getOTPAuthURI();
+    cout << "URI: " << uri << std::endl;
+    cout << "\nImport URI vao extension Authenticator" << std::endl;
+}
+
+string OtpService::getOTPAuthURI() {
     ostringstream oss;
     oss << "otpauth://totp/" << issuer << ":" << accountName
         << "?secret=" << secret << "&issuer=" << issuer;
