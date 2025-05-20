@@ -138,11 +138,14 @@ void PagePointTransaction::handle()
 			listInput[1].handleInput();
 			listValidation[1].clean();
 
-			int point = stoi(listInput[1].getText());
-			if (point <= 0)
+			if (listInput[1].getText() != "")
 			{
-				listValidation[1].setContent("So diem phai lon hon 0");
-				listValidation[1].display();
+				int point = stoi(listInput[1].getText());
+				if (point <= 0)
+				{
+					listValidation[1].setContent("So diem phai lon hon 0");
+					listValidation[1].display();
+				}
 			}
 
 			switch (listInput[1].getEndKey())

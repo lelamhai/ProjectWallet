@@ -9,8 +9,8 @@ const string FILE_ACCOUNT = "DataAccount.json";
 const string FILE_TRANSACTION = "DataTransaction.json";
 
 // Account admin
-const string ADMIN = "admin";
-
+const string USER_ADMIN = "admin";
+const string PASS_ADMIN = "admin";
 // Delay
 const int DELAY = 3000;
 
@@ -18,8 +18,9 @@ const int DELAY = 3000;
 const int hourBackup = 9;
 const int minuteBackup = 14;
 
-// Max point
+// Point
 const int MAX_POINT = 2000000000;
+const int DEFAULT_POINT = 100;
 
 // otpService
 const string SECRETKEY = "JBSWY3DPEHPK3PXPAAAAA"; // de nguoi dung nhap 1 scretkey

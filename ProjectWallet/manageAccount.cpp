@@ -16,7 +16,7 @@ bool ManageAccount::SignUp(string last, string first, string phone, string pass)
         AccountModel model;
         model.setLastName(last);
         model.setFirstName(first);
-        model.setPoint(100);
+        model.setPoint(DEFAULT_POINT);
         model.setNumberPhone(phone);
         string pw = pass;
         if (pass == "")  

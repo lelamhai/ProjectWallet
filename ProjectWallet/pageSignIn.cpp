@@ -121,7 +121,7 @@ void PageSignIn::handle()
 			string username = listInput[0].getText();
 			string password = listInput[1].getText();
 
-			if (username == ADMIN && password == ADMIN)
+			if (username == USER_ADMIN && password == PASS_ADMIN)
 			{
 				Singleton::getInstance()->Name = username;
 				nextPage = PageType::PAGE_ADMIN;
