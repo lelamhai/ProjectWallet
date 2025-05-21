@@ -17,6 +17,7 @@ void PagePointTransaction::main()
 
 void PagePointTransaction::setUI()
 {
+	OtpService otp;
 	box(0, 0, 60, 20);
 
 	gotoXY(3, 4);
@@ -65,6 +66,9 @@ void PagePointTransaction::setUI()
 	gotoXY(28, posY + 2);
 	cout << "Enter";
 	box(26, posY + 1, 8, 2);
+
+	gotoXY(2, posY + 6);
+	otp.printUriToConsole();
 }
 
 void PagePointTransaction::handle()
