@@ -14,6 +14,7 @@
 #include "PageForgotPassword.h"
 #include "PageUserTransaction.h"
 #include "backup.h"
+#include "PageSetupOtp.h"
 
 #include <thread>
 #include <iostream>
@@ -106,7 +107,14 @@ void main()
                 page->setUserID(currentUserID);
                 page->main();
                 break;
-            
+
+            case PageType::PAGE_SETUPOTP:
+                showCur(0);
+                page = new PageSetupOtp();
+                page->setUserID(currentUserID);
+                page->main();
+                break;
+
             default:
                 page = nullptr;
                 break;

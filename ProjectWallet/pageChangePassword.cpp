@@ -45,9 +45,6 @@ void PageChangePassword::setUI()
 	gotoXY(28, posY + 3);
 	cout << "Enter";
 	box(26, posY + 2, 8, 2);
-
-	gotoXY(2, posY + 7);
-	otp.printUriToConsole();
 }
 
 void PageChangePassword::handle()

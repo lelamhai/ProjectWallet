@@ -9,14 +9,16 @@ private:
 		PAGE_PROFILE			= 0,
 		PAGE_CHANGEPASSWORD		= 1,
 		PAGE_HISTORYTRANSACTION = 2,
-		PAGE_POINTTRANSACTION	= 3
+		PAGE_POINTTRANSACTION	= 3,
+		PAGE_SETUPOTP			= 4
 	};
 
 	vector<string> menu = {
 		"Thong Tin",
 		"Doi Mat Khau",
 		"Xem Giao Dich",
-		"Chuyen Diem"
+		"Chuyen Diem",
+		"Cai dat OTP"
 	};
 
 	vector<Text> listText;

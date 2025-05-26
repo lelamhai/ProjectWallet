@@ -83,6 +83,10 @@ void PageCustomer::handle()
 				nextPage = PageType::PAGE_POINTRANSACTION;
 				return;
 
+			case PagesOfCustomer::PAGE_SETUPOTP:
+				nextPage = PageType::PAGE_SETUPOTP;
+				return;
+
 			default:
 				break;
 			}

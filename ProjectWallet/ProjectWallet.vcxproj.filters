@@ -144,6 +144,9 @@
     <ClCompile Include="otpService.cpp">
       <Filter>Source Files\Systems</Filter>
     </ClCompile>
+    <ClCompile Include="pageSetupOtp.cpp">
+      <Filter>Source Files\FE\PageOfCustomer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputField.h">
@@ -238,6 +241,9 @@
     </ClInclude>
     <ClInclude Include="otpService.h">
       <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSetupOtp.h">
+      <Filter>Header Files\FE\PageOfCustomer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

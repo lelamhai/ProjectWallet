@@ -66,9 +66,6 @@ void PagePointTransaction::setUI()
 	gotoXY(28, posY + 2);
 	cout << "Enter";
 	box(26, posY + 1, 8, 2);
-
-	gotoXY(2, posY + 6);
-	otp.printUriToConsole();
 }
 
 void PagePointTransaction::handle()

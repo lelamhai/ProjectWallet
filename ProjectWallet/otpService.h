@@ -37,7 +37,5 @@ public:
     string generateCurrentOTP() const;
     bool verifyOTP(const std::string& userOTP, int allowedDrift = 1) const;
     OTPStatus checkOTPStatus(const std::string& userOTP) const;
-
-    void printUriToConsole();
     string getOTPAuthURI();
 };

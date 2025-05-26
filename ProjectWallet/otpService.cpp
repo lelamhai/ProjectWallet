@@ -81,19 +81,6 @@ OTPStatus OtpService::checkOTPStatus(const std::string& userOTP) const {
     return OTPStatus::INVALID;
 }
 
-void OtpService::printUriToConsole() {
-    string uri = getOTPAuthURI();
-    
-    cout << "Huong dan cai dat lay ma OTP, chi cai dat 1 lan!" << std::endl;
-    cout << "1: Cai dat extension: https://chromewebstore.google.com/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai?hl=en" << std::endl;
-    cout << "2: Pin enxtension tren thanh cong cu de de su dung" << std::endl;
-    cout << "3: Nhan chon vao extension, sau do nhan Edit" << std::endl;
-    cout << "4: Nhan chon icon dau + (Add account) > Sau do chon dong Import OTP URLs" << std::endl;
-    cout << "5: Copy doan nay: " << uri << std::endl;
-    cout << "6: Dan ma vua copy vao khung chat > chon Import Text Backup > Trinh duyet se thong bao Success > thanh cong!" << std::endl;
-    cout << "7: Nhan chon bao bieu tuong extension se hien ma OTP tuong ung" << std::endl;
-}
-
 string OtpService::getOTPAuthURI() {
     ostringstream oss;
     oss << "otpauth://totp/" << issuer << ":" << accountName
