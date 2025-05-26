@@ -13,7 +13,7 @@ PageSetupOtp::~PageSetupOtp()
 
 void PageSetupOtp::main()
 {
-	BasePage::header();
+	BasePage::setUIButtonBack();
 	BasePage::setTitlePage("Huond dan lay ma OTP");
 	BasePage::main();
 }
@@ -42,7 +42,7 @@ void PageSetupOtp::setUI()
     for (auto& line : guide)
         totalLines += (line.length() / maxLineLength) + 1;
 
-    int boxBottom = boxTop + totalLines + guide.size();
+    int boxBottom = boxTop + totalLines + guide.size() ;
 
 
     box(boxLeft, boxTop, boxRight, boxBottom);
