@@ -18,7 +18,7 @@ private:
 		"Doi Mat Khau",
 		"Xem Giao Dich",
 		"Chuyen Diem",
-		"Cai dat OTP"
+		"Cai Dat OTP"
 	};
 
 	vector<Text> listText;
