@@ -21,7 +21,6 @@ private:
 		"Nhap Lai Mat Khau"
 	};
 
-	int userID;
 	vector<InputField> listInput;
 	Text txtMessage;
 
