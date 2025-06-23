@@ -165,7 +165,7 @@
     <ClInclude Include="AccountModel.h" />
     <ClInclude Include="backup.h" />
     <ClInclude Include="BasePage.h" />
-    <ClInclude Include="manageTransaction.h" />
+    <ClInclude Include="ManageTransaction.h" />
     <ClInclude Include="otpService.h" />
     <ClInclude Include="PageChangePassword.h" />
     <ClInclude Include="ConfigApp.h" />

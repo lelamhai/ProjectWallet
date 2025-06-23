@@ -215,7 +215,7 @@
     <ClInclude Include="PageChangePassword.h">
       <Filter>Header Files\FE\PageOfCustomer</Filter>
     </ClInclude>
-    <ClInclude Include="manageTransaction.h">
+    <ClInclude Include="ManageTransaction.h">
       <Filter>Header Files\BE</Filter>
     </ClInclude>
     <ClInclude Include="transactionModel.h">

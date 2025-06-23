@@ -2,6 +2,7 @@ C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\accoun
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\backup.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\backup.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\basePage.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\basePage.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\manageTransaction.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\manageTransaction.obj
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\otpService.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\otpService.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageChangePassword.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\pageChangePassword.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\color.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\color.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\configApp.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\configApp.obj
@@ -18,6 +19,7 @@ C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageCu
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageManageWallet.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\pageManageWallet.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pagePointTransaction.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\pagePointTransaction.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageProfile.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\pageProfile.obj
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageSetupOtp.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\pageSetupOtp.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageSignIn.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\pageSignIn.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageSignUp.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\pageSignUp.obj
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageUserTransaction.cpp;C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\x64\Release\pageUserTransaction.obj

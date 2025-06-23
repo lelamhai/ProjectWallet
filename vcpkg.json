@@ -1,8 +1,0 @@
-{
-  "name": "projectWallet",
-  "version": "1.0.0",
-  "dependencies": [
-    "openssl"
-  ],
-  "builtin-baseline": "f04f2ba5b7dc6c10ff41c661f5f8e5b4a1642175"
-}

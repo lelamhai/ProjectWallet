@@ -1,4 +1,4 @@
-#include "ManageTransaction.h"
+﻿#include "ManageTransaction.h"
 
 ManageTransaction::ManageTransaction()
 {

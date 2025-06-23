@@ -1,7 +1,8 @@
-#include "ManageAccount.h"
+﻿#include "ManageAccount.h"
 
 ManageAccount::ManageAccount()
 {
+    // Để load dữ liệu tài khoản 
     LoadData();
 }
 
@@ -9,6 +10,9 @@ ManageAccount::~ManageAccount()
 {
 }
 
+/*
+Hàm để lưu thông tin cua người dùng xuống file json
+*/
 bool ManageAccount::SignUp(string last, string first, string phone, string pass)
 {
     if (CheckPhone(phone))
@@ -34,6 +38,11 @@ bool ManageAccount::SignUp(string last, string first, string phone, string pass)
     return false;
 }
 
+/*
+Hàm này nhận 2 tham số là user và password
+Tìm dữ liệu nào thỏa mãn
+Trả về cho FE tài khoản đó
+*/
 AccountModel ManageAccount::SignIn(string user, string pass)
 {
     for (int i = 0; i < listAccount.size(); i++)
@@ -46,6 +55,10 @@ AccountModel ManageAccount::SignIn(string user, string pass)
     return AccountModel();
 }
 
+/*
+Hàm này nhận tham số userID
+Để nhận biết người dùng đã hoạt động trong ứng dụng.
+*/
 void ManageAccount::Active(int userID)
 {
     for (int i = 0; i < listAccount.size(); i++)
@@ -59,6 +72,11 @@ void ManageAccount::Active(int userID)
     }
 }
 
+/*
+Hàm này để tìm kiếm dữ liệu dữ người dùng nhập vào.
+Hoạt động tìm kiếm ở tên người dùng -> họ -> Số điện thoại
+Trả về danh sách tìm kiếm
+*/
 vector<AccountModel> ManageAccount::LoadAccount(const string& keyword) {
 
     if (keyword != "")
@@ -112,11 +130,18 @@ bool ManageAccount::DeductPoint(AccountModel model, int point)
     return false;
 }
 
+/*
+Hàm này lấy toàn bộ dữ liệu Account
+Trả về dữ liệu
+*/
 vector<AccountModel> ManageAccount::GetAllAccount()
 {
     return listAccount;
 }
 
+/*
+Để kiểm tra số điện thoại có tồn tại không.
+*/
 bool ManageAccount::CheckPhone(string phone)
 {
     for (int i = 0; i < listAccount.size(); i++)
@@ -129,6 +154,10 @@ bool ManageAccount::CheckPhone(string phone)
     return true;
 }
 
+/*
+Hàm này biến đổ text IN HOA thành text chữ thường
+Trà về chuỗi
+*/
 string ManageAccount::ToLower(const string& str)
 {
     string lowerStr = str;
@@ -169,6 +198,9 @@ bool ManageAccount::ForgotPassword(int userID, string newPass)
     return false;
 }
 
+/*
+Hàm này để lưu dữ liệu dạng json xuống file
+*/
 void ManageAccount::SaveFile()
 {
     json jsonAccount = json::array();
@@ -186,6 +218,9 @@ void ManageAccount::SaveFile()
     }
 }
 
+/*
+Hàm này để đọc dữ liệu dạng json từ file lên hệ thống
+*/
 bool ManageAccount::LoadData()
 {
     ifstream file(path);

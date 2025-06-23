@@ -1,7 +1,13 @@
 ﻿  accountModel.cpp
   backup.cpp
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\backup.cpp(55,34): warning C4566: character represented by universal-character-name '\u1ED3' cannot be represented in the current code page (1252)
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\backup.cpp(55,34): warning C4566: character represented by universal-character-name '\u1EA1' cannot be represented in the current code page (1252)
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\backup.cpp(56,22): warning C4566: character represented by universal-character-name '\u1ED3' cannot be represented in the current code page (1252)
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\backup.cpp(56,22): warning C4566: character represented by universal-character-name '\u1EA1' cannot be represented in the current code page (1252)
   basePage.cpp
   manageTransaction.cpp
+  otpService.cpp
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\otpService.cpp(35,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   pageChangePassword.cpp
   color.cpp
   configApp.cpp
@@ -14,7 +20,7 @@ C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\inputF
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\inputField.cpp(63,6): warning C4101: 'count': unreferenced local variable
   keyboard.cpp
   main.cpp
-C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\main.cpp(22,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\main.cpp(23,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
   manageAccount.cpp
   pageForgotPassword.cpp
   pageHistoryTransaction.cpp
@@ -34,8 +40,11 @@ C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageMa
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageManageWallet.cpp(305,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\PagingData.h(108,58): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   pagePointTransaction.cpp
-  pageProfile.cpp
   Compiling...
+  pageProfile.cpp
+  pageSetupOtp.cpp
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageSetupOtp.cpp(43,55): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\pageSetupOtp.cpp(45,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   pageSignIn.cpp
   pageSignUp.cpp
   pageUserTransaction.cpp
@@ -51,6 +60,8 @@ C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\text.c
   Generating code
   Previous IPDB not found, fall back to full compilation.
 C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\ProjectWallet\manageAccount.cpp(222): warning C4715: 'ManageAccount::FindByUserID': not all control paths return a value
-  All 2914 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 3156 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   ProjectWallet.vcxproj -> C:\Users\ADMIN\Documents\PTIT\HK4\C++\Project\ProjectWallet\x64\Release\ProjectWallet.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
