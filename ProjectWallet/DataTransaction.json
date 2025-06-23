@@ -1,46 +1,585 @@
 {
     "Data": [
         {
-            "Datetime": "06/05/2025 10:32:18",
-            "Point": 10,
-            "ReceiverUserID": 1,
-            "SenderUserID": 0,
+            "Datetime": "10/05/2025 09:01:45",
+            "Point": 15,
+            "ReceiverUserID": 14,
+            "SenderUserID": 54,
             "TransactionID": 0
         },
         {
-            "Datetime": "06/05/2025 10:35:10",
-            "Point": 60,
-            "ReceiverUserID": 0,
-            "SenderUserID": 1,
-            "TransactionID": 2
-        },
-        {
-            "Datetime": "06/05/2025 23:07:42",
-            "Point": 100,
-            "ReceiverUserID": 1,
+            "Datetime": "10/05/2025 09:04:56",
+            "Point": 27,
+            "ReceiverUserID": 20,
             "SenderUserID": 0,
-            "TransactionID": 12
-        },
-        {
-            "Datetime": "16/05/2025 09:34:05",
-            "Point": 10,
-            "ReceiverUserID": 0,
-            "SenderUserID": 21,
-            "TransactionID": 6
-        },
-        {
-            "Datetime": "16/05/2025 09:37:07",
-            "Point": 10,
-            "ReceiverUserID": 0,
-            "SenderUserID": 21,
             "TransactionID": 8
         },
         {
-            "Datetime": "16/05/2025 09:43:53",
+            "Datetime": "10/05/2025 09:05:43",
+            "Point": 42,
+            "ReceiverUserID": 27,
+            "SenderUserID": 2,
+            "TransactionID": 15
+        },
+        {
+            "Datetime": "10/05/2025 09:06:57",
+            "Point": 60,
+            "ReceiverUserID": 44,
+            "SenderUserID": 5,
+            "TransactionID": 25
+        },
+        {
+            "Datetime": "10/05/2025 09:07:40",
+            "Point": 18,
+            "ReceiverUserID": 35,
+            "SenderUserID": 9,
+            "TransactionID": 38
+        },
+        {
+            "Datetime": "10/05/2025 09:09:44",
+            "Point": 70,
+            "ReceiverUserID": 0,
+            "SenderUserID": 14,
+            "TransactionID": 54
+        },
+        {
+            "Datetime": "10/05/2025 09:15:35",
+            "Point": 33,
+            "ReceiverUserID": 54,
+            "SenderUserID": 20,
+            "TransactionID": 73
+        },
+        {
+            "Datetime": "10/05/2025 09:16:38",
+            "Point": 22,
+            "ReceiverUserID": 9,
+            "SenderUserID": 27,
+            "TransactionID": 95
+        },
+        {
+            "Datetime": "10/05/2025 09:17:07",
+            "Point": 11,
+            "ReceiverUserID": 5,
+            "SenderUserID": 35,
+            "TransactionID": 120
+        },
+        {
+            "Datetime": "10/05/2025 09:17:38",
+            "Point": 49,
+            "ReceiverUserID": 2,
+            "SenderUserID": 44,
+            "TransactionID": 148
+        },
+        {
+            "Datetime": "13/05/2025 07:11:46",
+            "Point": 14,
+            "ReceiverUserID": 35,
+            "SenderUserID": 54,
+            "TransactionID": 40
+        },
+        {
+            "Datetime": "13/05/2025 07:12:22",
+            "Point": 31,
+            "ReceiverUserID": 2,
+            "SenderUserID": 0,
+            "TransactionID": 74
+        },
+        {
+            "Datetime": "13/05/2025 07:12:52",
+            "Point": 55,
+            "ReceiverUserID": 14,
+            "SenderUserID": 2,
+            "TransactionID": 111
+        },
+        {
+            "Datetime": "13/05/2025 07:13:27",
+            "Point": 17,
+            "ReceiverUserID": 20,
+            "SenderUserID": 5,
+            "TransactionID": 151
+        },
+        {
+            "Datetime": "13/05/2025 07:14:14",
+            "Point": 67,
+            "ReceiverUserID": 44,
+            "SenderUserID": 9,
+            "TransactionID": 194
+        },
+        {
+            "Datetime": "13/05/2025 07:14:54",
+            "Point": 10,
+            "ReceiverUserID": 9,
+            "SenderUserID": 14,
+            "TransactionID": 240
+        },
+        {
+            "Datetime": "13/05/2025 07:15:27",
+            "Point": 38,
+            "ReceiverUserID": 0,
+            "SenderUserID": 20,
+            "TransactionID": 289
+        },
+        {
+            "Datetime": "13/05/2025 07:16:00",
+            "Point": 63,
+            "ReceiverUserID": 5,
+            "SenderUserID": 27,
+            "TransactionID": 341
+        },
+        {
+            "Datetime": "13/05/2025 07:16:31",
+            "Point": 25,
+            "ReceiverUserID": 54,
+            "SenderUserID": 35,
+            "TransactionID": 396
+        },
+        {
+            "Datetime": "13/05/2025 07:16:59",
+            "Point": 44,
+            "ReceiverUserID": 27,
+            "SenderUserID": 44,
+            "TransactionID": 454
+        },
+        {
+            "Datetime": "26/05/2025 10:41:40",
+            "Point": 9,
+            "ReceiverUserID": 0,
+            "SenderUserID": 54,
+            "TransactionID": 140
+        },
+        {
+            "Datetime": "26/05/2025 10:41:54",
+            "Point": 15,
+            "ReceiverUserID": 2,
+            "SenderUserID": 54,
+            "TransactionID": 183
+        },
+        {
+            "Datetime": "26/05/2025 10:42:10",
+            "Point": 8,
+            "ReceiverUserID": 5,
+            "SenderUserID": 54,
+            "TransactionID": 228
+        },
+        {
+            "Datetime": "26/05/2025 10:42:27",
+            "Point": 10,
+            "ReceiverUserID": 9,
+            "SenderUserID": 54,
+            "TransactionID": 275
+        },
+        {
+            "Datetime": "26/05/2025 10:42:39",
+            "Point": 11,
+            "ReceiverUserID": 14,
+            "SenderUserID": 54,
+            "TransactionID": 324
+        },
+        {
+            "Datetime": "26/05/2025 10:42:51",
+            "Point": 13,
+            "ReceiverUserID": 20,
+            "SenderUserID": 54,
+            "TransactionID": 375
+        },
+        {
+            "Datetime": "26/05/2025 10:43:05",
+            "Point": 12,
+            "ReceiverUserID": 27,
+            "SenderUserID": 54,
+            "TransactionID": 428
+        },
+        {
+            "Datetime": "26/05/2025 10:43:19",
+            "Point": 7,
+            "ReceiverUserID": 35,
+            "SenderUserID": 54,
+            "TransactionID": 483
+        },
+        {
+            "Datetime": "26/05/2025 10:43:30",
+            "Point": 14,
+            "ReceiverUserID": 44,
+            "SenderUserID": 54,
+            "TransactionID": 540
+        },
+        {
+            "Datetime": "26/05/2025 10:45:06",
+            "Point": 20,
+            "ReceiverUserID": 54,
+            "SenderUserID": 0,
+            "TransactionID": 628
+        },
+        {
+            "Datetime": "26/05/2025 10:45:17",
+            "Point": 10,
+            "ReceiverUserID": 2,
+            "SenderUserID": 0,
+            "TransactionID": 689
+        },
+        {
+            "Datetime": "26/05/2025 10:45:29",
+            "Point": 17,
+            "ReceiverUserID": 5,
+            "SenderUserID": 0,
+            "TransactionID": 752
+        },
+        {
+            "Datetime": "26/05/2025 10:45:42",
+            "Point": 8,
+            "ReceiverUserID": 9,
+            "SenderUserID": 0,
+            "TransactionID": 817
+        },
+        {
+            "Datetime": "26/05/2025 10:45:53",
+            "Point": 19,
+            "ReceiverUserID": 14,
+            "SenderUserID": 0,
+            "TransactionID": 884
+        },
+        {
+            "Datetime": "26/05/2025 10:46:03",
+            "Point": 14,
+            "ReceiverUserID": 20,
+            "SenderUserID": 0,
+            "TransactionID": 953
+        },
+        {
+            "Datetime": "26/05/2025 10:46:13",
+            "Point": 12,
+            "ReceiverUserID": 27,
+            "SenderUserID": 0,
+            "TransactionID": 1024
+        },
+        {
+            "Datetime": "26/05/2025 10:46:23",
+            "Point": 16,
+            "ReceiverUserID": 35,
+            "SenderUserID": 0,
+            "TransactionID": 1097
+        },
+        {
+            "Datetime": "26/05/2025 10:46:34",
+            "Point": 18,
+            "ReceiverUserID": 44,
+            "SenderUserID": 0,
+            "TransactionID": 1172
+        },
+        {
+            "Datetime": "26/05/2025 10:48:39",
+            "Point": 11,
+            "ReceiverUserID": 54,
+            "SenderUserID": 2,
+            "TransactionID": 1287
+        },
+        {
+            "Datetime": "26/05/2025 10:48:49",
+            "Point": 13,
+            "ReceiverUserID": 0,
+            "SenderUserID": 2,
+            "TransactionID": 1366
+        },
+        {
+            "Datetime": "26/05/2025 10:49:04",
+            "Point": 8,
+            "ReceiverUserID": 5,
+            "SenderUserID": 2,
+            "TransactionID": 1447
+        },
+        {
+            "Datetime": "26/05/2025 10:49:14",
+            "Point": 14,
+            "ReceiverUserID": 9,
+            "SenderUserID": 2,
+            "TransactionID": 1530
+        },
+        {
+            "Datetime": "26/05/2025 10:49:40",
+            "Point": 7,
+            "ReceiverUserID": 14,
+            "SenderUserID": 2,
+            "TransactionID": 1615
+        },
+        {
+            "Datetime": "26/05/2025 10:49:51",
+            "Point": 10,
+            "ReceiverUserID": 20,
+            "SenderUserID": 2,
+            "TransactionID": 1702
+        },
+        {
+            "Datetime": "26/05/2025 10:50:01",
+            "Point": 9,
+            "ReceiverUserID": 27,
+            "SenderUserID": 2,
+            "TransactionID": 1791
+        },
+        {
+            "Datetime": "26/05/2025 10:50:10",
+            "Point": 12,
+            "ReceiverUserID": 35,
+            "SenderUserID": 2,
+            "TransactionID": 1882
+        },
+        {
+            "Datetime": "26/05/2025 10:50:22",
+            "Point": 12,
+            "ReceiverUserID": 44,
+            "SenderUserID": 2,
+            "TransactionID": 1975
+        },
+        {
+            "Datetime": "26/05/2025 10:51:36",
+            "Point": 9,
+            "ReceiverUserID": 54,
+            "SenderUserID": 5,
+            "TransactionID": 2117
+        },
+        {
+            "Datetime": "26/05/2025 10:52:40",
+            "Point": 7,
+            "ReceiverUserID": 0,
+            "SenderUserID": 5,
+            "TransactionID": 96
+        },
+        {
+            "Datetime": "26/05/2025 10:52:51",
+            "Point": 10,
+            "ReceiverUserID": 2,
+            "SenderUserID": 5,
+            "TransactionID": 195
+        },
+        {
+            "Datetime": "26/05/2025 10:53:01",
+            "Point": 14,
+            "ReceiverUserID": 9,
+            "SenderUserID": 5,
+            "TransactionID": 296
+        },
+        {
+            "Datetime": "26/05/2025 10:53:11",
+            "Point": 15,
+            "ReceiverUserID": 14,
+            "SenderUserID": 5,
+            "TransactionID": 399
+        },
+        {
+            "Datetime": "26/05/2025 10:53:24",
+            "Point": 13,
+            "ReceiverUserID": 20,
+            "SenderUserID": 5,
+            "TransactionID": 504
+        },
+        {
+            "Datetime": "26/05/2025 10:53:41",
+            "Point": 12,
+            "ReceiverUserID": 27,
+            "SenderUserID": 5,
+            "TransactionID": 611
+        },
+        {
+            "Datetime": "26/05/2025 10:53:51",
+            "Point": 11,
+            "ReceiverUserID": 35,
+            "SenderUserID": 5,
+            "TransactionID": 720
+        },
+        {
+            "Datetime": "26/05/2025 10:54:03",
+            "Point": 8,
+            "ReceiverUserID": 44,
+            "SenderUserID": 5,
+            "TransactionID": 831
+        },
+        {
+            "Datetime": "26/05/2025 11:03:58",
+            "Point": 10,
+            "ReceiverUserID": 54,
+            "SenderUserID": 9,
+            "TransactionID": 1896
+        },
+        {
+            "Datetime": "26/05/2025 11:04:07",
             "Point": 10,
             "ReceiverUserID": 0,
-            "SenderUserID": 21,
-            "TransactionID": 10
+            "SenderUserID": 9,
+            "TransactionID": 2011
+        },
+        {
+            "Datetime": "26/05/2025 11:04:18",
+            "Point": 15,
+            "ReceiverUserID": 2,
+            "SenderUserID": 9,
+            "TransactionID": 2128
+        },
+        {
+            "Datetime": "26/05/2025 11:04:36",
+            "Point": 15,
+            "ReceiverUserID": 5,
+            "SenderUserID": 9,
+            "TransactionID": 2247
+        },
+        {
+            "Datetime": "26/05/2025 11:04:50",
+            "Point": 6,
+            "ReceiverUserID": 14,
+            "SenderUserID": 9,
+            "TransactionID": 2368
+        },
+        {
+            "Datetime": "26/05/2025 11:05:01",
+            "Point": 6,
+            "ReceiverUserID": 20,
+            "SenderUserID": 9,
+            "TransactionID": 2491
+        },
+        {
+            "Datetime": "26/05/2025 11:05:13",
+            "Point": 6,
+            "ReceiverUserID": 27,
+            "SenderUserID": 9,
+            "TransactionID": 2616
+        },
+        {
+            "Datetime": "26/05/2025 11:05:21",
+            "Point": 7,
+            "ReceiverUserID": 35,
+            "SenderUserID": 9,
+            "TransactionID": 2743
+        },
+        {
+            "Datetime": "26/05/2025 11:05:32",
+            "Point": 7,
+            "ReceiverUserID": 44,
+            "SenderUserID": 9,
+            "TransactionID": 2872
+        },
+        {
+            "Datetime": "26/05/2025 11:07:58",
+            "Point": 12,
+            "ReceiverUserID": 54,
+            "SenderUserID": 14,
+            "TransactionID": 3068
+        },
+        {
+            "Datetime": "26/05/2025 11:08:09",
+            "Point": 8,
+            "ReceiverUserID": 0,
+            "SenderUserID": 14,
+            "TransactionID": 3201
+        },
+        {
+            "Datetime": "26/05/2025 11:08:19",
+            "Point": 17,
+            "ReceiverUserID": 2,
+            "SenderUserID": 14,
+            "TransactionID": 3336
+        },
+        {
+            "Datetime": "26/05/2025 11:08:29",
+            "Point": 15,
+            "ReceiverUserID": 5,
+            "SenderUserID": 14,
+            "TransactionID": 3473
+        },
+        {
+            "Datetime": "26/05/2025 11:08:43",
+            "Point": 20,
+            "ReceiverUserID": 9,
+            "SenderUserID": 14,
+            "TransactionID": 3612
+        },
+        {
+            "Datetime": "26/05/2025 11:08:57",
+            "Point": 10,
+            "ReceiverUserID": 20,
+            "SenderUserID": 14,
+            "TransactionID": 3753
+        },
+        {
+            "Datetime": "26/05/2025 11:09:10",
+            "Point": 5,
+            "ReceiverUserID": 27,
+            "SenderUserID": 14,
+            "TransactionID": 3896
+        },
+        {
+            "Datetime": "26/05/2025 11:09:20",
+            "Point": 15,
+            "ReceiverUserID": 35,
+            "SenderUserID": 14,
+            "TransactionID": 4041
+        },
+        {
+            "Datetime": "26/05/2025 11:09:30",
+            "Point": 25,
+            "ReceiverUserID": 44,
+            "SenderUserID": 14,
+            "TransactionID": 4188
+        },
+        {
+            "Datetime": "26/05/2025 11:10:47",
+            "Point": 10,
+            "ReceiverUserID": 54,
+            "SenderUserID": 20,
+            "TransactionID": 4411
+        },
+        {
+            "Datetime": "26/05/2025 11:10:57",
+            "Point": 15,
+            "ReceiverUserID": 0,
+            "SenderUserID": 20,
+            "TransactionID": 4562
+        },
+        {
+            "Datetime": "26/05/2025 11:11:07",
+            "Point": 10,
+            "ReceiverUserID": 2,
+            "SenderUserID": 20,
+            "TransactionID": 4715
+        },
+        {
+            "Datetime": "26/05/2025 11:11:26",
+            "Point": 10,
+            "ReceiverUserID": 5,
+            "SenderUserID": 20,
+            "TransactionID": 4870
+        },
+        {
+            "Datetime": "26/05/2025 11:11:38",
+            "Point": 12,
+            "ReceiverUserID": 9,
+            "SenderUserID": 20,
+            "TransactionID": 5027
+        },
+        {
+            "Datetime": "26/05/2025 11:11:52",
+            "Point": 20,
+            "ReceiverUserID": 14,
+            "SenderUserID": 20,
+            "TransactionID": 5186
+        },
+        {
+            "Datetime": "26/05/2025 11:12:06",
+            "Point": 10,
+            "ReceiverUserID": 27,
+            "SenderUserID": 20,
+            "TransactionID": 5347
+        },
+        {
+            "Datetime": "26/05/2025 11:12:14",
+            "Point": 13,
+            "ReceiverUserID": 35,
+            "SenderUserID": 20,
+            "TransactionID": 5510
+        },
+        {
+            "Datetime": "26/05/2025 11:12:26",
+            "Point": 23,
+            "ReceiverUserID": 44,
+            "SenderUserID": 20,
+            "TransactionID": 5675
         }
     ]
 }

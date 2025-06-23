@@ -2,12 +2,13 @@
 
 ManageTransaction::ManageTransaction()
 {
+    // Tạo và nạp dữ liệu vào danh sách giao dịch
     LoadData();
 }
 
 ManageTransaction::~ManageTransaction()
 {}
-
+/*hàm tải dữ liệu từ file json đưa vào danh sác giao dịch*/ 
 bool ManageTransaction::LoadData()
 {
     ifstream file(path);
@@ -31,19 +32,24 @@ bool ManageTransaction::LoadData()
         return true;
     }
 }
-
+/*Hàm này nhận số điện thoại làm đầu vào*/
 string ManageTransaction::GetFullNameByPhone(string phone)
 {
     ManageAccount a;
+    //Tìm tài khoản có số điện thoại đó
     AccountModel model = a.FindByPhone(phone);
-
+    
     if (model.getNumberPhone() != "")
     {
+        //Trả về họ tên đầy đủ của người dùng nếu tìm thấy số điện thoại đó
         return model.getLastName() + " " + model.getFirstName();
     }
     return "";
 }
 
+/*Hàm kiểm tra xem người dùng có đủ điểm để thực hiện giao dịch không
+duyệt qua tất cả các tài khoản
+*/
 bool ManageTransaction::CheckPointOfWallet(int senderUserID, int point)
 {
     ManageAccount a;
@@ -57,6 +63,8 @@ bool ManageTransaction::CheckPointOfWallet(int senderUserID, int point)
     return false;
 }
 
+/*Hàm thực hiện chuyển điểm từ người gửi senderUserID sang người nhận Phone,
+và ghi nhận giao dịch vào file json nếu chuyển điểm thành công*/
 void ManageTransaction::TransactionPoint(int SenderUserID, string phone, int Point)
 {
     ManageAccount a;
@@ -87,6 +95,7 @@ void ManageTransaction::TransactionPoint(int SenderUserID, string phone, int Poi
     }
 }
 
+/*hàm trả về danh sách các giao dịch mà các userID đã giao dịch*/
 vector<TransactionModel> ManageTransaction::GetAllTransaction(int userID)
 {
     vector<TransactionModel> results;
@@ -101,6 +110,7 @@ vector<TransactionModel> ManageTransaction::GetAllTransaction(int userID)
     return results;
 }
 
+/*lưu toàn bộ danh sách giao dịch vào file json*/
 bool ManageTransaction::SaveFile()
 {
     json jsonAccount = json::array();
