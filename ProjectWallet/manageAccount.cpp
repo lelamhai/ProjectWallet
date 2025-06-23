@@ -164,7 +164,7 @@ string ManageAccount::ToLower(const string& str)
     transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(), ::tolower);
     return lowerStr;
 }
-
+// Hàm thay đổi mật khẩu người dùng khi có mật khẩu cũ
 bool ManageAccount::ChangePassword(int userID, string oldPass, string newPass)
 {
     for (int i = 0; i < listAccount.size(); i++)
@@ -183,7 +183,7 @@ bool ManageAccount::ChangePassword(int userID, string oldPass, string newPass)
     }
     return false;
 }
-
+//Hàm thay đổi mật khẩu người dùng, sử dụng chức năng đổi mật khẩu người dùng trong phân quyền của admin
 bool ManageAccount::ForgotPassword(int userID, string newPass)
 {
     for (int i = 0; i < listAccount.size(); i++)
