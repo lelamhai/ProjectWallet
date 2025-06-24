@@ -100,6 +100,8 @@ vector<AccountModel> ManageAccount::LoadAccount(const string& keyword) {
     return listAccount;
 }
 
+/*
+Hàm cộng thêm điểm cho tài khoản người dùng khi nhận điểm thành công*/
 bool ManageAccount::AddPoint(AccountModel model, int point)
 {
     for (int i = 0; i < listAccount.size(); i++)
@@ -115,6 +117,8 @@ bool ManageAccount::AddPoint(AccountModel model, int point)
     return false;
 }
 
+/*
+Hàm trừ điểm cho tài khoản người dùng khi chuyển điểm thành công*/
 bool ManageAccount::DeductPoint(AccountModel model, int point)
 {
     for (int i = 0; i < listAccount.size(); i++)
