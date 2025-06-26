@@ -249,6 +249,7 @@ bool ManageAccount::LoadData()
     }
 }
 
+/*hàm tìm kiếm tài khoản theo userID truyền vào và trả về đối tượng accountmodel tương ứng*/
 AccountModel ManageAccount::FindByUserID(int userID)
 {
     for (int i = 0; i < listAccount.size(); i++)
@@ -260,6 +261,7 @@ AccountModel ManageAccount::FindByUserID(int userID)
     }
 }
 
+/*hàm tìm và trả về đối tượng accountmodel theo số phone được truyền vào*/
 AccountModel ManageAccount::FindByPhone(string phone)
 {
     for (int i = 0; i < listAccount.size(); i++)
