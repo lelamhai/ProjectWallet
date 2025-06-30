@@ -47,7 +47,7 @@ Tất cả thao tác được thực hiện thông qua giao diện dòng lệnh 
 
 ### 🛠️ Cài đặt thư viện cho OTP
 
-- Tải file vcpkg.rar tại đây
+- Tải file vcpkg.rar tại đây: https://drive.google.com/file/d/1b6v7ZPZdyljKGFD7R7cbgvnjukZjRdNy/view
 - Chuột phải thư mục setup-lib.bat chọn open để cài đặt tự động, không cần thao tác gì thêm. Màn hình console chạy xong hiển thị Đã cài đặt thư viện thành công! và nhấn phím bất kỳ để thoát.
 
 ### 🛠️ Biên dịch & chạy:
