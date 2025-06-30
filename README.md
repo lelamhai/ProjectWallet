@@ -3,6 +3,7 @@
 ## 🚀 Giới thiệu dự án
 
 Đây là dự án bài tập lớn môn Ngôn ngữ C++. Dự án mô phỏng một hệ thống quản lý tài khoản người dùng, bao gồm:
+
 - Đăng ký và đăng nhập tài khoản,
 - Quản lý mật khẩu và xác thực bằng OTP,
 - Theo dõi và cập nhật thông tin tài khoản,
@@ -12,12 +13,13 @@
 Tất cả thao tác được thực hiện thông qua giao diện dòng lệnh (CLI).
 
 ## 👥 Thành viên nhóm và phân công công việc
-| STT | Họ và tên             | MSSV         | Lớp            | Công việc đảm nhiệm                                                                 | Tỷ lệ % hoàn thành |
-|-----|------------------------|--------------|------------------|---------------------------------------------------------------------------------------|---------------------|
-| 1   | **Lê Lam Hải**         | K23DTCN426   | D23TXCN04-K      | Phát triển giao diện dòng lệnh; xử lý chức năng Đăng ký (Sign Up) và Đăng nhập (Sign In). | 25%                |
-| 2   | **Nguyễn Công Thịnh**  | K23DTCN314   | D23TXCN06-K      | Triển khai chức năng OTP xác thực; sao lưu & phục hồi dữ liệu.                        | 25%                |
-| 3   | **Huỳnh Thanh Phương** | B24DTCN063   | D24TXCN06-B      | Xây dựng chức năng chuyển điểm giữa các ví; hiển thị danh sách tài khoản (ShowListAccount); xử lý danh sách ví (ShowListWallet); nhập dữ liệu ban đầu. | 25%                |
-| 4   | **Đoàn Đại Long Vũ**   | B24DTCN026   | D24TXCN02-B      | Phát triển chức năng Quên mật khẩu (Forgot Password), Đổi mật khẩu (Change Password); kiểm thử chương trình và trình bày repo GitHub. | 25%                |
+
+| STT | Họ và tên              | MSSV       | Lớp         | Công việc đảm nhiệm                                                                                                                                    | Tỷ lệ % hoàn thành |
+| --- | ---------------------- | ---------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| 1   | **Lê Lam Hải**         | K23DTCN426 | D23TXCN04-K | Phát triển giao diện dòng lệnh; xử lý chức năng Đăng ký (Sign Up) và Đăng nhập (Sign In).                                                              | 25%                |
+| 2   | **Nguyễn Công Thịnh**  | K23DTCN314 | D23TXCN06-K | Triển khai chức năng OTP xác thực; sao lưu & phục hồi dữ liệu.                                                                                         | 25%                |
+| 3   | **Huỳnh Thanh Phương** | B24DTCN063 | D24TXCN06-B | Xây dựng chức năng chuyển điểm giữa các ví; hiển thị danh sách tài khoản (ShowListAccount); xử lý danh sách ví (ShowListWallet); nhập dữ liệu ban đầu. | 25%                |
+| 4   | **Đoàn Đại Long Vũ**   | B24DTCN026 | D24TXCN02-B | Phát triển chức năng Quên mật khẩu (Forgot Password), Đổi mật khẩu (Change Password); kiểm thử chương trình và trình bày repo GitHub.                  | 25%                |
 
 ## 📁 Cấu trúc thư mục
 
@@ -39,16 +41,24 @@ Tất cả thao tác được thực hiện thông qua giao diện dòng lệnh 
 ## ⚙️ Cài đặt và sử dụng
 
 ### 🧰 Yêu cầu:
+
 - Visual Studio 2022 trở lên (có cài đặt C++ Development)
 - Hoặc g++ hỗ trợ C++17 nếu dùng dòng lệnh
+
+### 🛠️ Cài đặt thư viện cho OTP
+
+- Tải file vcpkg.rar tại đây
+- Chuột phải thư mục setup-lib.bat chọn open để cài đặt tự động, không cần thao tác gì thêm. Màn hình console chạy xong hiển thị Đã cài đặt thư viện thành công! và nhấn phím bất kỳ để thoát.
 
 ### 🛠️ Biên dịch & chạy:
 
 **Cách 1: Dùng Visual Studio**
+
 1. Mở `ProjectWallet.sln`
 2. Nhấn **F5** để biên dịch và chạy chương trình
 
 **Cách 2: Dòng lệnh**
+
 ```bash
 g++ -std=c++17 -o ProjectWallet.exe src/*.cpp
 ./ProjectWallet.exe
@@ -57,6 +67,7 @@ g++ -std=c++17 -o ProjectWallet.exe src/*.cpp
 ## 📘 Tài liệu dự án
 
 ### 🧩 Giới thiệu dự án
+
 Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thưởng bằng ngôn ngữ C++, thông qua giao diện dòng lệnh. Người dùng có thể đăng ký tài khoản, xác thực OTP, đổi mật khẩu, chuyển điểm, xem giao dịch. Dữ liệu được lưu dưới dạng JSON và có cơ chế sao lưu tự động.
 
 ### 📝 Phân tích và đặc tả chức năng
@@ -64,6 +75,7 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
 ### 📄 Phân tích và Đặc tả chức năng chi tiết
 
 #### 1. Đăng ký tài khoản (Sign Up)
+
 - **Input:** Tên đăng nhập, mật khẩu, họ tên, số điện thoại,- **Output:** Tài khoản mới được tạo nếu hợp lệ
 - **Xử lý:**
   - Kiểm tra trùng tên đăng nhập
@@ -71,7 +83,9 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
   - Ghi thông tin người dùng vào `DataAccount.json`
 - **Ràng buộc:**
   - Mật khẩu tối thiểu 9 ký tự
+
 #### 2. Đăng nhập (Sign In)
+
 - **Input:** Tên đăng nhập và mật khẩu
 - **Output:** Truy cập vào hệ thống nếu hợp lệ
 - **Xử lý:**
@@ -79,6 +93,7 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
   - So sánh mật khẩu đã mã hóa (SHA256 hoặc tương đương)
 
 #### 3. Đổi mật khẩu (Change Password)
+
 - **Input:** Mật khẩu cũ, mật khẩu mới, xác nhận lại mật khẩu mới
 - **Output:** Đổi thành công nếu mật khẩu cũ đúng và hai mật khẩu mới khớp nhau
 - **Xử lý:**
@@ -89,6 +104,7 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
   - OTP hợp lệ trong thời gian 30s
 
 #### 4. Đặt lại mật khẩu (Admin)
+
 - **Vai trò:** Quản trị viên hỗ trợ người dùng khi bị mất mật khẩu
 - **Input:** Tài khoản người dùng cần đặt lại
 - **Output:** Mật khẩu mới được tạo/sửa lại bởi admin
@@ -100,6 +116,7 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
   - Tài khoản phải tồn tại
 
 #### 5. Quản lý ví (Wallet)
+
 - **Input:** Không (tự động khởi tạo khi tạo tài khoản)
 - **Output:** Ví có mã định danh, số điểm mặc định
 - **Xử lý:**
@@ -107,6 +124,7 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
   - Ví lưu trong file riêng hoặc cùng trong `DataAccount.json`
 
 #### 6. Chuyển điểm
+
 - **Input:** Mã ví nhận, số điểm cần chuyển
 - **Output:** Cập nhật số dư của hai ví nếu hợp lệ
 - **Xử lý:**
@@ -119,10 +137,12 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
   - OTP bắt buộc cho giao dịch
 
 #### 7. Xem danh sách ví và tài khoản (Chỉ quản trị)
+
 - **Output:** Hiển thị danh sách tất cả tài khoản và số dư ví
 - **Xử lý:** Đọc dữ liệu từ file JSON, định dạng và in ra
 
 #### 8. Sao lưu & phục hồi dữ liệu
+
 - **Thời điểm:** Mỗi ngày lúc `hourBackup:minuteBackup`
 - **Output:** File sao lưu có tên kèm thời gian lưu trong thư mục `Backup/`
 - **Xử lý:**
@@ -135,11 +155,13 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
 - **Tự động sao lưu dữ liệu** vào thư mục `Backup/` với log chi tiết
 
 ### ⚙️ Tập tin & thư viện kèm theo
+
 - `DataAccount.json`: thông tin người dùng
 - `DataTransaction.json`: giao dịch điểm
 - Thư viện sử dụng: `<windows.h>`, `<fstream>`, `<ctime>`, `<thread>` và `OTP` mã nguồn mở
 
 ### 🧑‍💻 Cách thao tác chương trình
+
 - Di chuyển bằng phím mũi tên ↑ ↓
 - Nhập tài khoản, mật khẩu, mã OTP theo yêu cầu
 - OTP (sinh từ Google Authenticator) được dùng để xác thực thay đổi thông tin hoặc giao dịch
@@ -147,7 +169,7 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
 
 ### 🔐 Hướng dẫn lấy mã OTP bằng tiện ích mở rộng Chrome (Authenticator Extension)
 
-1. **Cài đặt extension:**  
+1. **Cài đặt extension:**
    [https://chromewebstore.google.com/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai](https://chromewebstore.google.com/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai)
 
 2. **Ghim extension lên thanh công cụ** để dễ sử dụng.
@@ -167,6 +189,7 @@ Dự án xây dựng hệ thống quản lý tài khoản và ví điểm thư�
 7. Khi chọn vào biểu tượng extension, mã OTP sẽ hiển thị và cập nhật mỗi 30 giây.
 
 ### 📚 Tài liệu tham khảo
+
 - [CPP_OTP](https://github.com/patzol768/cpp-otp)
 - [COTP](https://github.com/tilkinsc/COTP)
 - [ACID – 200lab](https://200lab.io/blog/acid-la-gi/)
