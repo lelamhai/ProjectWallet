@@ -16,9 +16,9 @@ Tất cả thao tác được thực hiện thông qua giao diện dòng lệnh 
 
 | STT | Họ và tên              | MSSV       | Lớp         | Công việc đảm nhiệm                                                                                                                                    | Tỷ lệ % hoàn thành |
 | --- | ---------------------- | ---------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| 1   | **Lê Lam Hải**         | K23DTCN426 | D23TXCN04-K | Phát triển giao diện dòng lệnh; xử lý chức năng Đăng ký (Sign Up) và Đăng nhập (Sign In).                                                              | 25%                |
+| 1   | **Lê Lam Hải**         | K23DTCN426 | D23TXCN04-K | Phát triển giao diện dòng lệnh; xử lý chức năng Đăng ký (Sign Up) và Đăng nhập (Sign In), hiển thị danh sách tài khoản (ShowListAccount); xử lý danh sách ví (ShowListWallet).                                                              | 25%                |
 | 2   | **Nguyễn Công Thịnh**  | K23DTCN314 | D23TXCN06-K | Triển khai chức năng OTP xác thực; sao lưu & phục hồi dữ liệu.                                                                                         | 25%                |
-| 3   | **Huỳnh Thanh Phương** | B24DTCN063 | D24TXCN06-B | Xây dựng chức năng chuyển điểm giữa các ví; hiển thị danh sách tài khoản (ShowListAccount); xử lý danh sách ví (ShowListWallet); nhập dữ liệu ban đầu. | 25%                |
+| 3   | **Huỳnh Thanh Phương** | B24DTCN063 | D24TXCN06-B | Xây dựng chức năng chuyển điểm giữa các ví; Xem lịch sử giao dịch; nhập dữ liệu ban đầu. | 25%                |
 | 4   | **Đoàn Đại Long Vũ**   | B24DTCN026 | D24TXCN02-B | Phát triển chức năng Quên mật khẩu (Forgot Password), Đổi mật khẩu (Change Password); kiểm thử chương trình và trình bày repo GitHub.                  | 25%                |
 
 ## 📁 Cấu trúc thư mục
